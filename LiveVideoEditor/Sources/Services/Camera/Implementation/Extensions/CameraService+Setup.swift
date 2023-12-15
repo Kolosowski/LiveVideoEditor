@@ -16,7 +16,7 @@ extension CameraService {
 		let output = AVCaptureVideoDataOutput()
 		if captureSession.canAddOutput(output) {
 			captureSession.addOutput(output)
-			output.setSampleBufferDelegate(self, queue: nil)
+			output.setSampleBufferDelegate(self, queue: workQueue)
 		}
 	}
 	
@@ -33,7 +33,7 @@ extension CameraService {
 		let output = AVCaptureAudioDataOutput()
 		if captureSession.canAddOutput(output) {
 			captureSession.addOutput(output)
-			output.setSampleBufferDelegate(self, queue: nil)
+			output.setSampleBufferDelegate(self, queue: workQueue)
 		}
 	}
 	
