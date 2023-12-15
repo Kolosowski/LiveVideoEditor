@@ -11,6 +11,24 @@
 		582EF0152B2C890000AE804D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0112B2C890000AE804D /* ModuleBuilder.swift */; };
 		582EF0162B2C890000AE804D /* ModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0132B2C890000AE804D /* ModuleRouter.swift */; };
 		582EF0172B2C890000AE804D /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0142B2C890000AE804D /* Router.swift */; };
+		582EF0432B2C893500AE804D /* RootModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF01B2B2C893500AE804D /* RootModuleBuilder.swift */; };
+		582EF0442B2C893500AE804D /* RootModuleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF01D2B2C893500AE804D /* RootModuleProtocol.swift */; };
+		582EF0452B2C893500AE804D /* RootModuleDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF01E2B2C893500AE804D /* RootModuleDelegateProtocol.swift */; };
+		582EF0462B2C893500AE804D /* RootModulePresenter+RootModulePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0222B2C893500AE804D /* RootModulePresenter+RootModulePresenterProtocol.swift */; };
+		582EF0472B2C893500AE804D /* RootModulePresenter+RootModuleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0232B2C893500AE804D /* RootModulePresenter+RootModuleProtocol.swift */; };
+		582EF0482B2C893500AE804D /* RootModulePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0252B2C893500AE804D /* RootModulePresenter.swift */; };
+		582EF0492B2C893500AE804D /* RootModulePresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0272B2C893500AE804D /* RootModulePresenterProtocol.swift */; };
+		582EF04A2B2C893500AE804D /* RootModuleDependenciesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0292B2C893500AE804D /* RootModuleDependenciesProtocol.swift */; };
+		582EF04B2B2C893500AE804D /* RootModuleDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF02A2B2C893500AE804D /* RootModuleDependencies.swift */; };
+		582EF04C2B2C893500AE804D /* RootModuleView+RootModuleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF02E2B2C893500AE804D /* RootModuleView+RootModuleViewProtocol.swift */; };
+		582EF04D2B2C893500AE804D /* RootModuleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0302B2C893500AE804D /* RootModuleView.swift */; };
+		582EF04E2B2C893500AE804D /* RootModuleViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0322B2C893500AE804D /* RootModuleViewProtocol.swift */; };
+		582EF04F2B2C893500AE804D /* RootModuleInteractor+RootModuleInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0362B2C893500AE804D /* RootModuleInteractor+RootModuleInteractorProtocol.swift */; };
+		582EF0502B2C893500AE804D /* RootModuleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0382B2C893500AE804D /* RootModuleInteractor.swift */; };
+		582EF0512B2C893500AE804D /* RootModuleInteractorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF03A2B2C893500AE804D /* RootModuleInteractorProtocol.swift */; };
+		582EF0522B2C893500AE804D /* RootModuleRouter+RootModuleRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF03E2B2C893500AE804D /* RootModuleRouter+RootModuleRouterProtocol.swift */; };
+		582EF0532B2C893500AE804D /* RootModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0402B2C893500AE804D /* RootModuleRouter.swift */; };
+		582EF0542B2C893500AE804D /* RootModuleRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0422B2C893500AE804D /* RootModuleRouterProtocol.swift */; };
 		58B648562B2C86E30080B8F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B648552B2C86E30080B8F9 /* AppDelegate.swift */; };
 		58B6485F2B2C86E60080B8F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B6485E2B2C86E60080B8F9 /* Assets.xcassets */; };
 		58B648622B2C86E60080B8F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B648602B2C86E60080B8F9 /* LaunchScreen.storyboard */; };
@@ -20,6 +38,24 @@
 		582EF0112B2C890000AE804D /* ModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		582EF0132B2C890000AE804D /* ModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleRouter.swift; sourceTree = "<group>"; };
 		582EF0142B2C890000AE804D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		582EF01B2B2C893500AE804D /* RootModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleBuilder.swift; sourceTree = "<group>"; };
+		582EF01D2B2C893500AE804D /* RootModuleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleProtocol.swift; sourceTree = "<group>"; };
+		582EF01E2B2C893500AE804D /* RootModuleDelegateProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleDelegateProtocol.swift; sourceTree = "<group>"; };
+		582EF0222B2C893500AE804D /* RootModulePresenter+RootModulePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RootModulePresenter+RootModulePresenterProtocol.swift"; sourceTree = "<group>"; };
+		582EF0232B2C893500AE804D /* RootModulePresenter+RootModuleProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RootModulePresenter+RootModuleProtocol.swift"; sourceTree = "<group>"; };
+		582EF0252B2C893500AE804D /* RootModulePresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModulePresenter.swift; sourceTree = "<group>"; };
+		582EF0272B2C893500AE804D /* RootModulePresenterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModulePresenterProtocol.swift; sourceTree = "<group>"; };
+		582EF0292B2C893500AE804D /* RootModuleDependenciesProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleDependenciesProtocol.swift; sourceTree = "<group>"; };
+		582EF02A2B2C893500AE804D /* RootModuleDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleDependencies.swift; sourceTree = "<group>"; };
+		582EF02E2B2C893500AE804D /* RootModuleView+RootModuleViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RootModuleView+RootModuleViewProtocol.swift"; sourceTree = "<group>"; };
+		582EF0302B2C893500AE804D /* RootModuleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleView.swift; sourceTree = "<group>"; };
+		582EF0322B2C893500AE804D /* RootModuleViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleViewProtocol.swift; sourceTree = "<group>"; };
+		582EF0362B2C893500AE804D /* RootModuleInteractor+RootModuleInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RootModuleInteractor+RootModuleInteractorProtocol.swift"; sourceTree = "<group>"; };
+		582EF0382B2C893500AE804D /* RootModuleInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleInteractor.swift; sourceTree = "<group>"; };
+		582EF03A2B2C893500AE804D /* RootModuleInteractorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleInteractorProtocol.swift; sourceTree = "<group>"; };
+		582EF03E2B2C893500AE804D /* RootModuleRouter+RootModuleRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RootModuleRouter+RootModuleRouterProtocol.swift"; sourceTree = "<group>"; };
+		582EF0402B2C893500AE804D /* RootModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleRouter.swift; sourceTree = "<group>"; };
+		582EF0422B2C893500AE804D /* RootModuleRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootModuleRouterProtocol.swift; sourceTree = "<group>"; };
 		58B648522B2C86E30080B8F9 /* LiveVideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveVideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B648552B2C86E30080B8F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58B6485E2B2C86E60080B8F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -93,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				582EF00F2B2C890000AE804D /* Abstract */,
+				582EF0182B2C893500AE804D /* Root */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -121,6 +158,223 @@
 				582EF0132B2C890000AE804D /* ModuleRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		582EF0182B2C893500AE804D /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0192B2C893500AE804D /* Module */,
+				582EF0282B2C893500AE804D /* Dependencies */,
+				582EF0332B2C893500AE804D /* Interactor */,
+				582EF01F2B2C893500AE804D /* Presenter */,
+				582EF02B2B2C893500AE804D /* View */,
+				582EF03B2B2C893500AE804D /* Router */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		582EF0192B2C893500AE804D /* Module */ = {
+			isa = PBXGroup;
+			children = (
+				582EF01C2B2C893500AE804D /* Protocols */,
+				582EF01A2B2C893500AE804D /* Builder */,
+			);
+			path = Module;
+			sourceTree = "<group>";
+		};
+		582EF01A2B2C893500AE804D /* Builder */ = {
+			isa = PBXGroup;
+			children = (
+				582EF01B2B2C893500AE804D /* RootModuleBuilder.swift */,
+			);
+			path = Builder;
+			sourceTree = "<group>";
+		};
+		582EF01C2B2C893500AE804D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				582EF01D2B2C893500AE804D /* RootModuleProtocol.swift */,
+				582EF01E2B2C893500AE804D /* RootModuleDelegateProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		582EF01F2B2C893500AE804D /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0262B2C893500AE804D /* Protocols */,
+				582EF0202B2C893500AE804D /* Implementation */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		582EF0202B2C893500AE804D /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0242B2C893500AE804D /* Prime */,
+				582EF0212B2C893500AE804D /* Extensions */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		582EF0212B2C893500AE804D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0222B2C893500AE804D /* RootModulePresenter+RootModulePresenterProtocol.swift */,
+				582EF0232B2C893500AE804D /* RootModulePresenter+RootModuleProtocol.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		582EF0242B2C893500AE804D /* Prime */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0252B2C893500AE804D /* RootModulePresenter.swift */,
+			);
+			path = Prime;
+			sourceTree = "<group>";
+		};
+		582EF0262B2C893500AE804D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0272B2C893500AE804D /* RootModulePresenterProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		582EF0282B2C893500AE804D /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0292B2C893500AE804D /* RootModuleDependenciesProtocol.swift */,
+				582EF02A2B2C893500AE804D /* RootModuleDependencies.swift */,
+			);
+			path = Dependencies;
+			sourceTree = "<group>";
+		};
+		582EF02B2B2C893500AE804D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0312B2C893500AE804D /* Protocols */,
+				582EF02C2B2C893500AE804D /* Implementation */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		582EF02C2B2C893500AE804D /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				582EF02F2B2C893500AE804D /* Prime */,
+				582EF02D2B2C893500AE804D /* Extensions */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		582EF02D2B2C893500AE804D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				582EF02E2B2C893500AE804D /* RootModuleView+RootModuleViewProtocol.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		582EF02F2B2C893500AE804D /* Prime */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0302B2C893500AE804D /* RootModuleView.swift */,
+			);
+			path = Prime;
+			sourceTree = "<group>";
+		};
+		582EF0312B2C893500AE804D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0322B2C893500AE804D /* RootModuleViewProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		582EF0332B2C893500AE804D /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0392B2C893500AE804D /* Protocols */,
+				582EF0342B2C893500AE804D /* Implementation */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		582EF0342B2C893500AE804D /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0372B2C893500AE804D /* Prime */,
+				582EF0352B2C893500AE804D /* Extensions */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		582EF0352B2C893500AE804D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0362B2C893500AE804D /* RootModuleInteractor+RootModuleInteractorProtocol.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		582EF0372B2C893500AE804D /* Prime */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0382B2C893500AE804D /* RootModuleInteractor.swift */,
+			);
+			path = Prime;
+			sourceTree = "<group>";
+		};
+		582EF0392B2C893500AE804D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				582EF03A2B2C893500AE804D /* RootModuleInteractorProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		582EF03B2B2C893500AE804D /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0412B2C893500AE804D /* Protocols */,
+				582EF03C2B2C893500AE804D /* Implementation */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		582EF03C2B2C893500AE804D /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				582EF03F2B2C893500AE804D /* Prime */,
+				582EF03D2B2C893500AE804D /* Extensions */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		582EF03D2B2C893500AE804D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				582EF03E2B2C893500AE804D /* RootModuleRouter+RootModuleRouterProtocol.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		582EF03F2B2C893500AE804D /* Prime */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0402B2C893500AE804D /* RootModuleRouter.swift */,
+			);
+			path = Prime;
+			sourceTree = "<group>";
+		};
+		582EF0412B2C893500AE804D /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				582EF0422B2C893500AE804D /* RootModuleRouterProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 		58B648492B2C86E30080B8F9 = {
@@ -225,9 +479,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				582EF0502B2C893500AE804D /* RootModuleInteractor.swift in Sources */,
+				582EF0522B2C893500AE804D /* RootModuleRouter+RootModuleRouterProtocol.swift in Sources */,
+				582EF0542B2C893500AE804D /* RootModuleRouterProtocol.swift in Sources */,
+				582EF0482B2C893500AE804D /* RootModulePresenter.swift in Sources */,
+				582EF0472B2C893500AE804D /* RootModulePresenter+RootModuleProtocol.swift in Sources */,
+				582EF04A2B2C893500AE804D /* RootModuleDependenciesProtocol.swift in Sources */,
+				582EF04C2B2C893500AE804D /* RootModuleView+RootModuleViewProtocol.swift in Sources */,
 				582EF0172B2C890000AE804D /* Router.swift in Sources */,
+				582EF0462B2C893500AE804D /* RootModulePresenter+RootModulePresenterProtocol.swift in Sources */,
+				582EF0452B2C893500AE804D /* RootModuleDelegateProtocol.swift in Sources */,
+				582EF0442B2C893500AE804D /* RootModuleProtocol.swift in Sources */,
+				582EF0532B2C893500AE804D /* RootModuleRouter.swift in Sources */,
 				58B648562B2C86E30080B8F9 /* AppDelegate.swift in Sources */,
+				582EF0492B2C893500AE804D /* RootModulePresenterProtocol.swift in Sources */,
+				582EF04D2B2C893500AE804D /* RootModuleView.swift in Sources */,
+				582EF0512B2C893500AE804D /* RootModuleInteractorProtocol.swift in Sources */,
+				582EF04B2B2C893500AE804D /* RootModuleDependencies.swift in Sources */,
 				582EF0162B2C890000AE804D /* ModuleRouter.swift in Sources */,
+				582EF04F2B2C893500AE804D /* RootModuleInteractor+RootModuleInteractorProtocol.swift in Sources */,
+				582EF0432B2C893500AE804D /* RootModuleBuilder.swift in Sources */,
+				582EF04E2B2C893500AE804D /* RootModuleViewProtocol.swift in Sources */,
 				582EF0152B2C890000AE804D /* ModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

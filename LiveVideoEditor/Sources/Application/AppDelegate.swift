@@ -9,6 +9,8 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 		_ application: UIApplication,
 		didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
 	) -> Bool {
+		window = RootModuleBuilder().build().view
+		window?.makeKeyAndVisible()
 		return true
 	}
 	
