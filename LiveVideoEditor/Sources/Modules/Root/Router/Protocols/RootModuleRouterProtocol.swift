@@ -1,3 +1,5 @@
 import Foundation
 
-protocol RootModuleRouterProtocol: AnyObject {}
+protocol RootModuleRouterProtocol: AnyObject {
+	func presentCamera()
+}

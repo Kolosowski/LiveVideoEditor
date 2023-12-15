@@ -2,6 +2,8 @@ import Foundation
 
 extension RootModulePresenter: RootModulePresenterProtocol {
 	
-	func viewDidLoad() {}
+	func viewDidLoad() {
+		router.presentCamera()
+	}
 	
 }

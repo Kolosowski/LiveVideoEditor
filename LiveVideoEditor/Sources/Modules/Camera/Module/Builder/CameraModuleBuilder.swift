@@ -19,7 +19,7 @@ extension CameraModuleBuilder {
 		delegate: CameraModuleDelegateProtocol?
 	) -> Output {
 		let dependenciesContainer = CameraModuleDependenciesContainer()
-		let router = CameraModuleRouter()
+		let router = CameraModuleRouter(container)
 		let interactor = CameraModuleInteractor(dependencies: dependenciesContainer)
 		let presenter = CameraModulePresenter(router: router, interactor: interactor)
 		let view = CameraModuleView(presenter: presenter)
