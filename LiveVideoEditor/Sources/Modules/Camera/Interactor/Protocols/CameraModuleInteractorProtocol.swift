@@ -1,3 +1,7 @@
 import Foundation
 
-protocol CameraModuleInteractorProtocol {}
+protocol CameraModuleInteractorProtocol {
+	func setupCamera() throws
+	func startCameraCapture(_ delegate: CameraServiceDelegateProtocol)
+	func stopCameraCapture()
+}

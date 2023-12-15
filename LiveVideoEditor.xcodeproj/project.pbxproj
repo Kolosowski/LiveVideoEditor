@@ -58,6 +58,7 @@
 		582EF0AF2B2C970000AE804D /* CameraServiceDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0AE2B2C970000AE804D /* CameraServiceDelegateProtocol.swift */; };
 		582EF0B12B2C987D00AE804D /* CameraService+Setup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0B02B2C987D00AE804D /* CameraService+Setup.swift */; };
 		582EF0B52B2C9BDC00AE804D /* Container+TryResolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0B42B2C9BDB00AE804D /* Container+TryResolve.swift */; };
+		582EF0B72B2C9E9400AE804D /* CameraModulePresenter+CameraServiceDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0B62B2C9E9400AE804D /* CameraModulePresenter+CameraServiceDelegateProtocol.swift */; };
 		58B648562B2C86E30080B8F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B648552B2C86E30080B8F9 /* AppDelegate.swift */; };
 		58B6485F2B2C86E60080B8F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B6485E2B2C86E60080B8F9 /* Assets.xcassets */; };
 		58B648622B2C86E60080B8F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B648602B2C86E60080B8F9 /* LaunchScreen.storyboard */; };
@@ -114,6 +115,7 @@
 		582EF0AE2B2C970000AE804D /* CameraServiceDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraServiceDelegateProtocol.swift; sourceTree = "<group>"; };
 		582EF0B02B2C987D00AE804D /* CameraService+Setup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraService+Setup.swift"; sourceTree = "<group>"; };
 		582EF0B42B2C9BDB00AE804D /* Container+TryResolve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Container+TryResolve.swift"; sourceTree = "<group>"; };
+		582EF0B62B2C9E9400AE804D /* CameraModulePresenter+CameraServiceDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePresenter+CameraServiceDelegateProtocol.swift"; sourceTree = "<group>"; };
 		58B648522B2C86E30080B8F9 /* LiveVideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveVideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B648552B2C86E30080B8F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58B6485E2B2C86E60080B8F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -500,6 +502,7 @@
 			children = (
 				582EF0642B2C8C0F00AE804D /* CameraModulePresenter+CameraModulePresenterProtocol.swift */,
 				582EF0632B2C8C0F00AE804D /* CameraModulePresenter+CameraModuleProtocol.swift */,
+				582EF0B62B2C9E9400AE804D /* CameraModulePresenter+CameraServiceDelegateProtocol.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -843,6 +846,7 @@
 				582EF0922B2C8C0F00AE804D /* CameraModuleView+SetupActions.swift in Sources */,
 				582EF09A2B2C8C0F00AE804D /* CameraModuleInteractorProtocol.swift in Sources */,
 				582EF0A32B2C91D600AE804D /* CameraServiceProtocol.swift in Sources */,
+				582EF0B72B2C9E9400AE804D /* CameraModulePresenter+CameraServiceDelegateProtocol.swift in Sources */,
 				582EF04A2B2C893500AE804D /* RootModuleDependenciesProtocol.swift in Sources */,
 				582EF0892B2C8C0F00AE804D /* CameraModuleProtocol.swift in Sources */,
 				582EF0942B2C8C0F00AE804D /* CameraModuleView+CameraModuleViewProtocol.swift in Sources */,
