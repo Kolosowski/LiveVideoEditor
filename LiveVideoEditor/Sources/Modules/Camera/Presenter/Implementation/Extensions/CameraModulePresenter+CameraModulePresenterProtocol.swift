@@ -12,4 +12,8 @@ extension CameraModulePresenter: CameraModulePresenterProtocol {
 		}
 	}
 	
+	func viewDidAppear() {
+		interactor.startCameraCapture(self)
+	}
+	
 }
