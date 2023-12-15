@@ -154,31 +154,6 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		582EF0042B2C875B00AE804D /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				582EF0062B2C876800AE804D /* InterfaceBuilder */,
-				582EF0052B2C876000AE804D /* Graphics */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		582EF0052B2C876000AE804D /* Graphics */ = {
-			isa = PBXGroup;
-			children = (
-				58B6485E2B2C86E60080B8F9 /* Assets.xcassets */,
-			);
-			name = Graphics;
-			sourceTree = "<group>";
-		};
-		582EF0062B2C876800AE804D /* InterfaceBuilder */ = {
-			isa = PBXGroup;
-			children = (
-				58B648602B2C86E60080B8F9 /* LaunchScreen.storyboard */,
-			);
-			name = InterfaceBuilder;
-			sourceTree = "<group>";
-		};
 		582EF0072B2C877400AE804D /* Supportings */ = {
 			isa = PBXGroup;
 			children = (
@@ -751,10 +726,35 @@
 			isa = PBXGroup;
 			children = (
 				582EF0022B2C872C00AE804D /* Sources */,
-				582EF0042B2C875B00AE804D /* Resources */,
+				58E30C122B2CC821000A5A98 /* Resources */,
 				582EF0072B2C877400AE804D /* Supportings */,
 			);
 			path = LiveVideoEditor;
+			sourceTree = "<group>";
+		};
+		58E30C122B2CC821000A5A98 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				58E30C132B2CC836000A5A98 /* Graphics */,
+				58E30C142B2CC83F000A5A98 /* InterfaceBuilder */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		58E30C132B2CC836000A5A98 /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				58B6485E2B2C86E60080B8F9 /* Assets.xcassets */,
+			);
+			path = Graphics;
+			sourceTree = "<group>";
+		};
+		58E30C142B2CC83F000A5A98 /* InterfaceBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				58B648602B2C86E60080B8F9 /* LaunchScreen.storyboard */,
+			);
+			path = InterfaceBuilder;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
