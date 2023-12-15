@@ -3,9 +3,12 @@ import UIKit
 extension RootModuleRouter: RootModuleRouterProtocol {
 	
 	func presentCamera() {
-		let camera = CameraModuleBuilder(container).module(delegate: nil).view
-		
-		view?.rootViewController = camera
+		do {
+			let camera = try CameraModuleBuilder(container).module(delegate: nil).view
+			view?.rootViewController = camera
+		} catch {
+			assertionFailure("Couldn't create 'Camera' module. \(error)")
+		}
 	}
 	
 }

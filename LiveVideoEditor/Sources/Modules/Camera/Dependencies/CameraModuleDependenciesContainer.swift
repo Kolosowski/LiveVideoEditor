@@ -1,3 +1,5 @@
 import Foundation
 
-struct CameraModuleDependenciesContainer: CameraModuleDependenciesProtocol {}
+struct CameraModuleDependenciesContainer: CameraModuleDependenciesProtocol {
+	let cameraService: CameraServiceProtocol
+}

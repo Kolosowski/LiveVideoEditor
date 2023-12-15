@@ -17,8 +17,10 @@ extension CameraModuleBuilder {
 	
 	func module(
 		delegate: CameraModuleDelegateProtocol?
-	) -> Output {
-		let dependenciesContainer = CameraModuleDependenciesContainer()
+	) throws -> Output {
+		let dependenciesContainer = try CameraModuleDependenciesContainer(
+			cameraService: container.tryResolve()
+		)
 		let router = CameraModuleRouter(container)
 		let interactor = CameraModuleInteractor(dependencies: dependenciesContainer)
 		let presenter = CameraModulePresenter(router: router, interactor: interactor)

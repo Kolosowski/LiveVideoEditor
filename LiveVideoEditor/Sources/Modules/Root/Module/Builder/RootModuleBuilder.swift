@@ -11,7 +11,11 @@ final class RootModuleBuilder: ModuleBuilder {
 	
 	// MARK: - Register Services
 	
-	override func registerServices() {}
+	override func registerServices() {
+		container.register(CameraServiceProtocol.self) { _ in
+			CameraService()
+		}
+	}
 	
 }
 

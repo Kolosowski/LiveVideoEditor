@@ -1,3 +1,5 @@
 import Foundation
 
-protocol CameraModuleDependenciesProtocol {}
+protocol CameraModuleDependenciesProtocol {
+	var cameraService: CameraServiceProtocol { get }
+}
