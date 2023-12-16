@@ -62,6 +62,13 @@
 		58B648562B2C86E30080B8F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B648552B2C86E30080B8F9 /* AppDelegate.swift */; };
 		58B6485F2B2C86E60080B8F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B6485E2B2C86E60080B8F9 /* Assets.xcassets */; };
 		58B648622B2C86E60080B8F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B648602B2C86E60080B8F9 /* LaunchScreen.storyboard */; };
+		58E30C182B2CCC7F000A5A98 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C172B2CCC7F000A5A98 /* Renderer.swift */; };
+		58E30C1A2B2CCC97000A5A98 /* CameraRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C192B2CCC97000A5A98 /* CameraRenderer.swift */; };
+		58E30C1D2B2CCCE6000A5A98 /* RenderError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C1C2B2CCCE6000A5A98 /* RenderError.swift */; };
+		58E30C232B2E10E4000A5A98 /* CameraRenderer+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C222B2E10E4000A5A98 /* CameraRenderer+Render.swift */; };
+		58E30C252B2E10F4000A5A98 /* CameraRenderer+Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C242B2E10F4000A5A98 /* CameraRenderer+Texture.swift */; };
+		58E30C272B2E1418000A5A98 /* CameraRenderer+PassDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C262B2E1418000A5A98 /* CameraRenderer+PassDescriptor.swift */; };
+		58E30C292B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C282B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -121,6 +128,13 @@
 		58B6485E2B2C86E60080B8F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58B648612B2C86E60080B8F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58B648632B2C86E60080B8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58E30C172B2CCC7F000A5A98 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		58E30C192B2CCC97000A5A98 /* CameraRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraRenderer.swift; sourceTree = "<group>"; };
+		58E30C1C2B2CCCE6000A5A98 /* RenderError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderError.swift; sourceTree = "<group>"; };
+		58E30C222B2E10E4000A5A98 /* CameraRenderer+Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraRenderer+Render.swift"; sourceTree = "<group>"; };
+		58E30C242B2E10F4000A5A98 /* CameraRenderer+Texture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraRenderer+Texture.swift"; sourceTree = "<group>"; };
+		58E30C262B2E1418000A5A98 /* CameraRenderer+PassDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraRenderer+PassDescriptor.swift"; sourceTree = "<group>"; };
+		58E30C282B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraRenderer+VertextBuffer.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -639,6 +653,7 @@
 		582EF09E2B2C919A00AE804D /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				58E30C152B2CCC6E000A5A98 /* Rendering */,
 				582EF09F2B2C91BC00AE804D /* Camera */,
 			);
 			path = Services;
@@ -757,6 +772,68 @@
 			path = InterfaceBuilder;
 			sourceTree = "<group>";
 		};
+		58E30C152B2CCC6E000A5A98 /* Rendering */ = {
+			isa = PBXGroup;
+			children = (
+				58E30C162B2CCC74000A5A98 /* Abstract */,
+				58E30C1E2B2E10C9000A5A98 /* Renderer */,
+				58E30C1B2B2CCCD7000A5A98 /* Error */,
+			);
+			path = Rendering;
+			sourceTree = "<group>";
+		};
+		58E30C162B2CCC74000A5A98 /* Abstract */ = {
+			isa = PBXGroup;
+			children = (
+				58E30C172B2CCC7F000A5A98 /* Renderer.swift */,
+			);
+			path = Abstract;
+			sourceTree = "<group>";
+		};
+		58E30C1B2B2CCCD7000A5A98 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				58E30C1C2B2CCCE6000A5A98 /* RenderError.swift */,
+			);
+			path = Error;
+			sourceTree = "<group>";
+		};
+		58E30C1E2B2E10C9000A5A98 /* Renderer */ = {
+			isa = PBXGroup;
+			children = (
+				58E30C1F2B2E10CE000A5A98 /* Camera */,
+			);
+			path = Renderer;
+			sourceTree = "<group>";
+		};
+		58E30C1F2B2E10CE000A5A98 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				58E30C212B2E10D7000A5A98 /* Prime */,
+				58E30C202B2E10D2000A5A98 /* Extensions */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		58E30C202B2E10D2000A5A98 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				58E30C222B2E10E4000A5A98 /* CameraRenderer+Render.swift */,
+				58E30C262B2E1418000A5A98 /* CameraRenderer+PassDescriptor.swift */,
+				58E30C242B2E10F4000A5A98 /* CameraRenderer+Texture.swift */,
+				58E30C282B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		58E30C212B2E10D7000A5A98 /* Prime */ = {
+			isa = PBXGroup;
+			children = (
+				58E30C192B2CCC97000A5A98 /* CameraRenderer.swift */,
+			);
+			path = Prime;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -839,8 +916,10 @@
 				582EF0902B2C8C0F00AE804D /* CameraModuleDependenciesProtocol.swift in Sources */,
 				582EF0522B2C893500AE804D /* RootModuleRouter+RootModuleRouterProtocol.swift in Sources */,
 				582EF09C2B2C8C0F00AE804D /* CameraModuleRouter.swift in Sources */,
+				58E30C252B2E10F4000A5A98 /* CameraRenderer+Texture.swift in Sources */,
 				582EF0542B2C893500AE804D /* RootModuleRouterProtocol.swift in Sources */,
 				582EF0482B2C893500AE804D /* RootModulePresenter.swift in Sources */,
+				58E30C292B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift in Sources */,
 				582EF0AB2B2C945200AE804D /* CameraService+Error.swift in Sources */,
 				582EF0472B2C893500AE804D /* RootModulePresenter+RootModuleProtocol.swift in Sources */,
 				582EF0922B2C8C0F00AE804D /* CameraModuleView+SetupActions.swift in Sources */,
@@ -849,6 +928,7 @@
 				582EF0B72B2C9E9400AE804D /* CameraModulePresenter+CameraServiceDelegateProtocol.swift in Sources */,
 				582EF04A2B2C893500AE804D /* RootModuleDependenciesProtocol.swift in Sources */,
 				582EF0892B2C8C0F00AE804D /* CameraModuleProtocol.swift in Sources */,
+				58E30C1D2B2CCCE6000A5A98 /* RenderError.swift in Sources */,
 				582EF0942B2C8C0F00AE804D /* CameraModuleView+CameraModuleViewProtocol.swift in Sources */,
 				582EF04C2B2C893500AE804D /* RootModuleView+RootModuleViewProtocol.swift in Sources */,
 				582EF0972B2C8C0F00AE804D /* CameraModuleViewProtocol.swift in Sources */,
@@ -857,6 +937,7 @@
 				582EF08B2B2C8C0F00AE804D /* CameraModulePresenter+CameraModuleProtocol.swift in Sources */,
 				582EF0462B2C893500AE804D /* RootModulePresenter+RootModulePresenterProtocol.swift in Sources */,
 				582EF0452B2C893500AE804D /* RootModuleDelegateProtocol.swift in Sources */,
+				58E30C1A2B2CCC97000A5A98 /* CameraRenderer.swift in Sources */,
 				582EF08D2B2C8C0F00AE804D /* CameraModulePresenter.swift in Sources */,
 				582EF0442B2C893500AE804D /* RootModuleProtocol.swift in Sources */,
 				582EF09D2B2C8C0F00AE804D /* CameraModuleRouterProtocol.swift in Sources */,
@@ -874,8 +955,10 @@
 				582EF0A72B2C91F000AE804D /* CameraService.swift in Sources */,
 				582EF04F2B2C893500AE804D /* RootModuleInteractor+RootModuleInteractorProtocol.swift in Sources */,
 				582EF0952B2C8C0F00AE804D /* CameraModuleView+SetupViews.swift in Sources */,
+				58E30C182B2CCC7F000A5A98 /* Renderer.swift in Sources */,
 				582EF0B52B2C9BDC00AE804D /* Container+TryResolve.swift in Sources */,
 				582EF0932B2C8C0F00AE804D /* CameraModuleView+SetupLayout.swift in Sources */,
+				58E30C272B2E1418000A5A98 /* CameraRenderer+PassDescriptor.swift in Sources */,
 				582EF0AD2B2C956A00AE804D /* CameraService+Output.swift in Sources */,
 				582EF0882B2C8C0F00AE804D /* CameraModuleBuilder.swift in Sources */,
 				582EF0AF2B2C970000AE804D /* CameraServiceDelegateProtocol.swift in Sources */,
@@ -884,6 +967,7 @@
 				582EF08F2B2C8C0F00AE804D /* CameraModuleDependenciesContainer.swift in Sources */,
 				582EF04E2B2C893500AE804D /* RootModuleViewProtocol.swift in Sources */,
 				582EF0962B2C8C0F00AE804D /* CameraModuleView.swift in Sources */,
+				58E30C232B2E10E4000A5A98 /* CameraRenderer+Render.swift in Sources */,
 				582EF0152B2C890000AE804D /* ModuleBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
