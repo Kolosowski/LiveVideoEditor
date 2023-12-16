@@ -69,6 +69,8 @@
 		58E30C252B2E10F4000A5A98 /* CameraRenderer+Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C242B2E10F4000A5A98 /* CameraRenderer+Texture.swift */; };
 		58E30C272B2E1418000A5A98 /* CameraRenderer+PassDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C262B2E1418000A5A98 /* CameraRenderer+PassDescriptor.swift */; };
 		58E30C292B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C282B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift */; };
+		58E30C2C2B2E183A000A5A98 /* CameraVertexShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C2B2B2E183A000A5A98 /* CameraVertexShader.metal */; };
+		58E30C2E2B2E184C000A5A98 /* CameraFragmentShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C2D2B2E184C000A5A98 /* CameraFragmentShader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +137,8 @@
 		58E30C242B2E10F4000A5A98 /* CameraRenderer+Texture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraRenderer+Texture.swift"; sourceTree = "<group>"; };
 		58E30C262B2E1418000A5A98 /* CameraRenderer+PassDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraRenderer+PassDescriptor.swift"; sourceTree = "<group>"; };
 		58E30C282B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraRenderer+VertextBuffer.swift"; sourceTree = "<group>"; };
+		58E30C2B2B2E183A000A5A98 /* CameraVertexShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CameraVertexShader.metal; sourceTree = "<group>"; };
+		58E30C2D2B2E184C000A5A98 /* CameraFragmentShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CameraFragmentShader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -810,6 +814,7 @@
 			isa = PBXGroup;
 			children = (
 				58E30C212B2E10D7000A5A98 /* Prime */,
+				58E30C2A2B2E1827000A5A98 /* Shaders */,
 				58E30C202B2E10D2000A5A98 /* Extensions */,
 			);
 			path = Camera;
@@ -832,6 +837,15 @@
 				58E30C192B2CCC97000A5A98 /* CameraRenderer.swift */,
 			);
 			path = Prime;
+			sourceTree = "<group>";
+		};
+		58E30C2A2B2E1827000A5A98 /* Shaders */ = {
+			isa = PBXGroup;
+			children = (
+				58E30C2B2B2E183A000A5A98 /* CameraVertexShader.metal */,
+				58E30C2D2B2E184C000A5A98 /* CameraFragmentShader.metal */,
+			);
+			path = Shaders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -912,6 +926,7 @@
 			files = (
 				582EF0B12B2C987D00AE804D /* CameraService+Setup.swift in Sources */,
 				582EF0502B2C893500AE804D /* RootModuleInteractor.swift in Sources */,
+				58E30C2C2B2E183A000A5A98 /* CameraVertexShader.metal in Sources */,
 				582EF0992B2C8C0F00AE804D /* CameraModuleInteractor.swift in Sources */,
 				582EF0902B2C8C0F00AE804D /* CameraModuleDependenciesProtocol.swift in Sources */,
 				582EF0522B2C893500AE804D /* RootModuleRouter+RootModuleRouterProtocol.swift in Sources */,
@@ -932,6 +947,7 @@
 				582EF0942B2C8C0F00AE804D /* CameraModuleView+CameraModuleViewProtocol.swift in Sources */,
 				582EF04C2B2C893500AE804D /* RootModuleView+RootModuleViewProtocol.swift in Sources */,
 				582EF0972B2C8C0F00AE804D /* CameraModuleViewProtocol.swift in Sources */,
+				58E30C2E2B2E184C000A5A98 /* CameraFragmentShader.metal in Sources */,
 				582EF0172B2C890000AE804D /* Router.swift in Sources */,
 				582EF08A2B2C8C0F00AE804D /* CameraModuleDelegateProtocol.swift in Sources */,
 				582EF08B2B2C8C0F00AE804D /* CameraModulePresenter+CameraModuleProtocol.swift in Sources */,
