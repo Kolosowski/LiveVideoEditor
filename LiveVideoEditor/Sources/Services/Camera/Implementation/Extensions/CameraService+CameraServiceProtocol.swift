@@ -11,6 +11,7 @@ extension CameraService: CameraServiceProtocol {
 	func startCapture(_ delegate: CameraServiceDelegateProtocol) {
 		self.delegate = delegate
 		workQueue.async { [weak self] in
+			self?.captureSession.commitConfiguration()
 			self?.captureSession.startRunning()
 		}
 	}

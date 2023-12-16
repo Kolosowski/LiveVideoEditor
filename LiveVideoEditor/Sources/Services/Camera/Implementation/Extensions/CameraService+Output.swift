@@ -8,13 +8,15 @@ extension CameraService: AVCaptureVideoDataOutputSampleBufferDelegate, AVCapture
 		didOutput sampleBuffer: CMSampleBuffer,
 		from connection: AVCaptureConnection
 	) {
-		switch output {
-		case is AVCaptureVideoDataOutput:
-			delegate?.didReceiveVideoOutput(sampleBuffer)
-		case is AVCaptureAudioDataOutput:
-			delegate?.didReceiveAudioOutput(sampleBuffer)
-		default:
-			debugPrint("Unrecognized output received.")
+		DispatchQueue.main.async {
+			switch output {
+			case is AVCaptureVideoDataOutput:
+				self.delegate?.didReceiveVideoOutput(sampleBuffer)
+			case is AVCaptureAudioDataOutput:
+				self.delegate?.didReceiveAudioOutput(sampleBuffer)
+			default:
+				debugPrint("Unrecognized output received.")
+			}
 		}
 	}
 	

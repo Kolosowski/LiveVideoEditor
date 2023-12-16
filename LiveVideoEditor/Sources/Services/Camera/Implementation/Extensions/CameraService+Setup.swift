@@ -14,6 +14,7 @@ extension CameraService {
 		}
 		
 		let output = AVCaptureVideoDataOutput()
+		output.videoSettings = [kCVPixelBufferMetalCompatibilityKey as String: true]
 		if captureSession.canAddOutput(output) {
 			captureSession.addOutput(output)
 			output.setSampleBufferDelegate(self, queue: workQueue)
