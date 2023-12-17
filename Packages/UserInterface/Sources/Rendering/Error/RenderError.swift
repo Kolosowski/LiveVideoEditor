@@ -9,5 +9,4 @@ enum RenderError: Error {
 	case textureCacheCreate
 	case textureCreate
 	case imageBufferCreate
-	case vertexBufferCreate
 }
