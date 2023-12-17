@@ -157,6 +157,7 @@
 				582EF0032B2C874900AE804D /* Application */,
 				582EF00E2B2C88F000AE804D /* Modules */,
 				582EF09E2B2C919A00AE804D /* Services */,
+				58E30C382B2EFFED000A5A98 /* UserInterface */,
 				582EF0B22B2C9BDB00AE804D /* Extensions */,
 			);
 			path = Sources;
@@ -655,7 +656,6 @@
 		582EF09E2B2C919A00AE804D /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				58E30C152B2CCC6E000A5A98 /* Rendering */,
 				582EF09F2B2C91BC00AE804D /* Camera */,
 			);
 			path = Services;
@@ -843,6 +843,14 @@
 				58E30C2D2B2E184C000A5A98 /* CameraFragmentShader.metal */,
 			);
 			path = Shaders;
+			sourceTree = "<group>";
+		};
+		58E30C382B2EFFED000A5A98 /* UserInterface */ = {
+			isa = PBXGroup;
+			children = (
+				58E30C152B2CCC6E000A5A98 /* Rendering */,
+			);
+			path = UserInterface;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
