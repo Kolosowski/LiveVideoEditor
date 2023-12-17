@@ -9,7 +9,7 @@ extension CameraRenderer {
 			throw RenderError.commandBufferCreate
 		}
 		
-		guard let encoder = commandBuffer.makeRenderCommandEncoder(descriptor: passDescriptor(drawable: drawable)) else {
+		guard let encoder = commandBuffer.makeRenderCommandEncoder(descriptor: passDescriptor(texture: drawable.texture)) else {
 			throw RenderError.encoderCreate
 		}
 		encoder.setRenderPipelineState(pipelineState)
