@@ -1,4 +1,5 @@
 import Foundation
+import Services
 
 protocol CameraModuleInteractorProtocol {
 	func setupCamera() throws

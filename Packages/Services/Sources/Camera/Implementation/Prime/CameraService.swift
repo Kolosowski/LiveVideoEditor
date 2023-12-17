@@ -1,7 +1,7 @@
 import Foundation
 import AVFoundation
 
-final class CameraService: NSObject {
+public final class CameraService: NSObject {
 	
 	// MARK: - Stored Properties / Tools
 	

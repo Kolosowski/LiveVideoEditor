@@ -1,4 +1,5 @@
 import Foundation
+import Services
 import CoreMedia.CMSampleBuffer
 
 extension CameraModulePresenter: CameraServiceDelegateProtocol {

@@ -3,7 +3,7 @@ import AVFoundation
 
 extension CameraService: AVCaptureVideoDataOutputSampleBufferDelegate, AVCaptureAudioDataOutputSampleBufferDelegate {
 	
-	func captureOutput(
+	public func captureOutput(
 		_ output: AVCaptureOutput,
 		didOutput sampleBuffer: CMSampleBuffer,
 		from connection: AVCaptureConnection

@@ -1,4 +1,5 @@
 import UIKit
+import Services
 
 final class RootModuleBuilder: ModuleBuilder {
 	
