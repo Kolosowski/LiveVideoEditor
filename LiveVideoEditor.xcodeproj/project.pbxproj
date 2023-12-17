@@ -68,7 +68,6 @@
 		58E30C232B2E10E4000A5A98 /* CameraRenderer+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C222B2E10E4000A5A98 /* CameraRenderer+Render.swift */; };
 		58E30C252B2E10F4000A5A98 /* CameraRenderer+Texture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C242B2E10F4000A5A98 /* CameraRenderer+Texture.swift */; };
 		58E30C272B2E1418000A5A98 /* CameraRenderer+PassDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C262B2E1418000A5A98 /* CameraRenderer+PassDescriptor.swift */; };
-		58E30C292B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C282B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift */; };
 		58E30C2C2B2E183A000A5A98 /* CameraVertexShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C2B2B2E183A000A5A98 /* CameraVertexShader.metal */; };
 		58E30C2E2B2E184C000A5A98 /* CameraFragmentShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 58E30C2D2B2E184C000A5A98 /* CameraFragmentShader.metal */; };
 /* End PBXBuildFile section */
@@ -136,7 +135,6 @@
 		58E30C222B2E10E4000A5A98 /* CameraRenderer+Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraRenderer+Render.swift"; sourceTree = "<group>"; };
 		58E30C242B2E10F4000A5A98 /* CameraRenderer+Texture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraRenderer+Texture.swift"; sourceTree = "<group>"; };
 		58E30C262B2E1418000A5A98 /* CameraRenderer+PassDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraRenderer+PassDescriptor.swift"; sourceTree = "<group>"; };
-		58E30C282B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraRenderer+VertextBuffer.swift"; sourceTree = "<group>"; };
 		58E30C2B2B2E183A000A5A98 /* CameraVertexShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CameraVertexShader.metal; sourceTree = "<group>"; };
 		58E30C2D2B2E184C000A5A98 /* CameraFragmentShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = CameraFragmentShader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -826,7 +824,6 @@
 				58E30C222B2E10E4000A5A98 /* CameraRenderer+Render.swift */,
 				58E30C262B2E1418000A5A98 /* CameraRenderer+PassDescriptor.swift */,
 				58E30C242B2E10F4000A5A98 /* CameraRenderer+Texture.swift */,
-				58E30C282B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -883,6 +880,7 @@
 				TargetAttributes = {
 					58B648512B2C86E30080B8F9 = {
 						CreatedOnToolsVersion = 15.0.1;
+						LastSwiftMigration = 1510;
 					};
 				};
 			};
@@ -934,7 +932,6 @@
 				58E30C252B2E10F4000A5A98 /* CameraRenderer+Texture.swift in Sources */,
 				582EF0542B2C893500AE804D /* RootModuleRouterProtocol.swift in Sources */,
 				582EF0482B2C893500AE804D /* RootModulePresenter.swift in Sources */,
-				58E30C292B2E164B000A5A98 /* CameraRenderer+VertextBuffer.swift in Sources */,
 				582EF0AB2B2C945200AE804D /* CameraService+Error.swift in Sources */,
 				582EF0472B2C893500AE804D /* RootModulePresenter+RootModuleProtocol.swift in Sources */,
 				582EF0922B2C8C0F00AE804D /* CameraModuleView+SetupActions.swift in Sources */,
@@ -1126,6 +1123,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 93KKDVN863;
@@ -1143,6 +1141,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuesdayCode.kolosowskiar.LiveVideoEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LiveVideoEditor/Sources/Services/Rendering/Renderer/Camera/Shaders/LiveVideoEditor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1153,6 +1153,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 93KKDVN863;
@@ -1170,6 +1171,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.tuesdayCode.kolosowskiar.LiveVideoEditor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LiveVideoEditor/Sources/Services/Rendering/Renderer/Camera/Shaders/LiveVideoEditor-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

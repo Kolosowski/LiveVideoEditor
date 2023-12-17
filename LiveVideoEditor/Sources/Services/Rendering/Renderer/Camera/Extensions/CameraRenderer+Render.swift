@@ -13,7 +13,7 @@ extension CameraRenderer {
 			throw RenderError.encoderCreate
 		}
 		encoder.setRenderPipelineState(pipelineState)
-		encoder.setVertexBuffer(try vertexBuffer(), offset: 0, index: 0)
+		encoder.drawPrimitives(type: .triangleStrip, vertexStart: 0, vertexCount: 4, instanceCount: 1)
 		encoder.setFragmentTexture(try texture(from: buffer), index: 0)
 		encoder.endEncoding()
 		
