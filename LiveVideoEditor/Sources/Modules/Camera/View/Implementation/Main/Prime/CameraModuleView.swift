@@ -11,6 +11,10 @@ final class CameraModuleView: UIViewController {
 	
 	var cancellables: Set<AnyCancellable> = []
 	
+	// MARK: - Stored Properties / Views
+	
+	let preliminaryView: CameraModulePreliminaryView = CameraModulePreliminaryView()
+	
 	// MARK: - Life Cycle
 	
 	init(presenter: CameraModulePresenterProtocol) {
