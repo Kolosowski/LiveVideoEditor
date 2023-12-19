@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		581C134F2B31B86300E515D6 /* CameraModulePreliminaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C134E2B31B86300E515D6 /* CameraModulePreliminaryView.swift */; };
 		581C13552B31BB9C00E515D6 /* CameraModulePreliminaryView+SetupLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C13542B31BB9C00E515D6 /* CameraModulePreliminaryView+SetupLayers.swift */; };
+		581C13572B31BC8E00E515D6 /* CameraModulePreliminaryView+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C13562B31BC8E00E515D6 /* CameraModulePreliminaryView+Render.swift */; };
+		581C13592B31BD3E00E515D6 /* CameraModulePreliminaryView+Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C13582B31BD3E00E515D6 /* CameraModulePreliminaryView+Error.swift */; };
 		582EF00B2B2C88A600AE804D /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 582EF00A2B2C88A600AE804D /* Swinject */; };
 		582EF0152B2C890000AE804D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0112B2C890000AE804D /* ModuleBuilder.swift */; };
 		582EF0162B2C890000AE804D /* ModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0132B2C890000AE804D /* ModuleRouter.swift */; };
@@ -64,6 +66,8 @@
 /* Begin PBXFileReference section */
 		581C134E2B31B86300E515D6 /* CameraModulePreliminaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModulePreliminaryView.swift; sourceTree = "<group>"; };
 		581C13542B31BB9C00E515D6 /* CameraModulePreliminaryView+SetupLayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePreliminaryView+SetupLayers.swift"; sourceTree = "<group>"; };
+		581C13562B31BC8E00E515D6 /* CameraModulePreliminaryView+Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePreliminaryView+Render.swift"; sourceTree = "<group>"; };
+		581C13582B31BD3E00E515D6 /* CameraModulePreliminaryView+Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePreliminaryView+Error.swift"; sourceTree = "<group>"; };
 		582EF0112B2C890000AE804D /* ModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		582EF0132B2C890000AE804D /* ModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleRouter.swift; sourceTree = "<group>"; };
 		582EF0142B2C890000AE804D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 			isa = PBXGroup;
 			children = (
 				581C13542B31BB9C00E515D6 /* CameraModulePreliminaryView+SetupLayers.swift */,
+				581C13562B31BC8E00E515D6 /* CameraModulePreliminaryView+Render.swift */,
+				581C13582B31BD3E00E515D6 /* CameraModulePreliminaryView+Error.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -832,6 +838,7 @@
 				582EF0B72B2C9E9400AE804D /* CameraModulePresenter+CameraServiceDelegateProtocol.swift in Sources */,
 				582EF04A2B2C893500AE804D /* RootModuleDependenciesProtocol.swift in Sources */,
 				582EF0892B2C8C0F00AE804D /* CameraModuleProtocol.swift in Sources */,
+				581C13592B31BD3E00E515D6 /* CameraModulePreliminaryView+Error.swift in Sources */,
 				582EF0942B2C8C0F00AE804D /* CameraModuleView+CameraModuleViewProtocol.swift in Sources */,
 				582EF04C2B2C893500AE804D /* RootModuleView+RootModuleViewProtocol.swift in Sources */,
 				582EF0972B2C8C0F00AE804D /* CameraModuleViewProtocol.swift in Sources */,
@@ -839,6 +846,7 @@
 				582EF08A2B2C8C0F00AE804D /* CameraModuleDelegateProtocol.swift in Sources */,
 				582EF08B2B2C8C0F00AE804D /* CameraModulePresenter+CameraModuleProtocol.swift in Sources */,
 				582EF0462B2C893500AE804D /* RootModulePresenter+RootModulePresenterProtocol.swift in Sources */,
+				581C13572B31BC8E00E515D6 /* CameraModulePreliminaryView+Render.swift in Sources */,
 				582EF0452B2C893500AE804D /* RootModuleDelegateProtocol.swift in Sources */,
 				582EF08D2B2C8C0F00AE804D /* CameraModulePresenter.swift in Sources */,
 				582EF0442B2C893500AE804D /* RootModuleProtocol.swift in Sources */,
