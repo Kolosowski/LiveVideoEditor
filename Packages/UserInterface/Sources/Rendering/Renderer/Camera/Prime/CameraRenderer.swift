@@ -11,7 +11,7 @@ public final class CameraRenderer: Renderer {
 	
 	// MARK: - Life Cycle
 	
-	override init() throws {
+	public override init() throws {
 		try super.init()
 		
 		let pipelineDescriptor = MTLRenderPipelineDescriptor()
