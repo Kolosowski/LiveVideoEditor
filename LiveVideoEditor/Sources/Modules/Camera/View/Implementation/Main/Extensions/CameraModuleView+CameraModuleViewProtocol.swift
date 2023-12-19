@@ -9,8 +9,12 @@ extension CameraModuleView: CameraModuleViewProtocol {
 		setupActions()
 	}
 	
-	func render(_ buffer: CMSampleBuffer) throws {
-		try preliminaryView.render(buffer)
+	func render(_ buffer: CMSampleBuffer) {
+		do {
+			try preliminaryView.render(buffer)
+		} catch {
+			presenter.didReceive(error: error)
+		}
 	}
 	
 }

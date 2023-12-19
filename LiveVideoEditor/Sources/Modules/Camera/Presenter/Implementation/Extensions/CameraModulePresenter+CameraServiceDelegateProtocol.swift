@@ -5,11 +5,7 @@ import CoreMedia.CMSampleBuffer
 extension CameraModulePresenter: CameraServiceDelegateProtocol {
 	
 	func didReceiveVideoOutput(_ buffer: CMSampleBuffer) {
-		do {
-			try view?.render(buffer)
-		} catch {
-			debugPrint(error)
-		}
+		view?.render(buffer)
 	}
 	
 	func didReceiveAudioOutput(_ buffer: CMSampleBuffer) {}

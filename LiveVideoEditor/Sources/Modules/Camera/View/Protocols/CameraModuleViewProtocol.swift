@@ -3,5 +3,5 @@ import CoreMedia.CMSampleBuffer
 
 protocol CameraModuleViewProtocol: AnyObject {
 	func setup()
-	func render(_ buffer: CMSampleBuffer) throws
+	func render(_ buffer: CMSampleBuffer)
 }
