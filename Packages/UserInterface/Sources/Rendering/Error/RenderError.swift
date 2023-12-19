@@ -1,6 +1,6 @@
 import Foundation
 
-enum RenderError: Error {
+public enum RenderError: Error {
 	case deviceCreate
 	case queueCreate
 	case libraryCreate

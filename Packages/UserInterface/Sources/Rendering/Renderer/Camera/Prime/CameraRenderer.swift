@@ -1,13 +1,13 @@
 import Foundation
 import MetalKit
 
-final class CameraRenderer: Renderer {
+public final class CameraRenderer: Renderer {
 	
 	// MARK: - Stored Properties / Tools
 	
-	let pixelFormat: MTLPixelFormat = .bgra8Unorm
-	private(set) var pipelineState: MTLRenderPipelineState!
-	private(set) var textureCache: CVMetalTextureCache!
+	public let pixelFormat: MTLPixelFormat = .bgra8Unorm
+	public private(set) var pipelineState: MTLRenderPipelineState!
+	public private(set) var textureCache: CVMetalTextureCache!
 	
 	// MARK: - Life Cycle
 	

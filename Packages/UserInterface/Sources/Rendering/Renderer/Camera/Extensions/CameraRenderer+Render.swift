@@ -4,7 +4,7 @@ import CoreMedia.CMSampleBuffer
 
 extension CameraRenderer {
 	
-	func render(_ buffer: CMSampleBuffer, drawable: CAMetalDrawable) throws {
+	public func render(_ buffer: CMSampleBuffer, drawable: CAMetalDrawable) throws {
 		guard let commandBuffer = queue.makeCommandBuffer() else {
 			throw RenderError.commandBufferCreate
 		}

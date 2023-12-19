@@ -1,17 +1,17 @@
 import Foundation
 import MetalKit
 
-class Renderer {
+open class Renderer {
 	
 	// MARK: - Stored Properties / Tools
 	
-	let device: MTLDevice
-	let queue: MTLCommandQueue
-	let library: MTLLibrary
+	public let device: MTLDevice
+	public let queue: MTLCommandQueue
+	public let library: MTLLibrary
 	
 	// MARK: - Life Cycle
 	
-	init() throws {
+	public init() throws {
 		guard let device = MTLCreateSystemDefaultDevice() else {
 			throw RenderError.deviceCreate
 		}
