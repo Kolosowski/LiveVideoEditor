@@ -1,4 +1,5 @@
 import UIKit
+import CoreMedia.CMSampleBuffer
 
 extension CameraModuleView: CameraModuleViewProtocol {
 	
@@ -6,6 +7,10 @@ extension CameraModuleView: CameraModuleViewProtocol {
 		setupViews()
 		setupLayout()
 		setupActions()
+	}
+	
+	func render(_ buffer: CMSampleBuffer) throws {
+		try preliminaryView.render(buffer)
 	}
 	
 }
