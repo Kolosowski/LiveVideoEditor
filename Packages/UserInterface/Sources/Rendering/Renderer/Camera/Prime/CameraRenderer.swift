@@ -1,5 +1,6 @@
 import Foundation
 import Metal
+import CoreVideo.CVMetalTextureCache
 
 public final class CameraRenderer: Renderer {
 	
