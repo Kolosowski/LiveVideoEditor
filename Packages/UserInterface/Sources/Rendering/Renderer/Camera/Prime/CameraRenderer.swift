@@ -1,5 +1,5 @@
 import Foundation
-import MetalKit
+import Metal
 
 public final class CameraRenderer: Renderer {
 	

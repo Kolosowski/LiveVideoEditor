@@ -1,4 +1,5 @@
 import Foundation
+import Metal
 import CoreMedia.CMSampleBuffer
 
 extension CameraRenderer {
