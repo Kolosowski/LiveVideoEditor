@@ -136,7 +136,7 @@
 		581C13492B31B7BF00E515D6 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				581C134B2B31B7CB00E515D6 /* Camera */,
+				581C134B2B31B7CB00E515D6 /* Preliminary */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -150,13 +150,13 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		581C134B2B31B7CB00E515D6 /* Camera */ = {
+		581C134B2B31B7CB00E515D6 /* Preliminary */ = {
 			isa = PBXGroup;
 			children = (
 				581C134D2B31B7D400E515D6 /* Prime */,
 				581C134C2B31B7D000E515D6 /* Extensions */,
 			);
-			path = Camera;
+			path = Preliminary;
 			sourceTree = "<group>";
 		};
 		581C134C2B31B7D000E515D6 /* Extensions */ = {
