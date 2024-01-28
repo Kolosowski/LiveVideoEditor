@@ -22,10 +22,7 @@ open class Renderer {
 		}
 		self.queue = queue
 		
-		guard let library = device.makeDefaultLibrary() else {
-			throw RenderError.libraryCreate
-		}
-		self.library = library
+		self.library = try device.makeDefaultLibrary(bundle: .module)
 	}
 	
 }
