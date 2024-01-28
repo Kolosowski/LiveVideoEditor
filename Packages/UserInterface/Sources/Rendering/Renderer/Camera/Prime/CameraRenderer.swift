@@ -26,19 +26,19 @@ public final class CameraRenderer: Renderer {
 	]
 	let vertices: [Vertex] = [
 		Vertex(
-			position: float3(-1, 0.1, 0),
+			position: float3(1, 1, 0),
 			texture: float2(0, 1)
 		),
 		Vertex(
-			position: float3(-1, -0.1, 0),
+			position: float3(-1, 1, 0),
 			texture: float2(0, 0)
 		),
 		Vertex(
-			position: float3(1, -0.1, 0),
+			position: float3(-1, -1, 0),
 			texture: float2(1, 0)
 		),
 		Vertex(
-			position: float3(1, 0.1, 0),
+			position: float3(1, -1, 0),
 			texture: float2(1, 1)
 		),
 	]
