@@ -3,13 +3,10 @@ import MetalKit
 
 extension CameraRenderer {
 	
-	public func draw(
-		_ drawable: CAMetalDrawable,
-		passDescriptor: MTLRenderPassDescriptor
-	) {
+	public func draw(_ drawable: CAMetalDrawable) {
 		guard
 			let buffer = queue.makeCommandBuffer(),
-			let encoder = buffer.makeRenderCommandEncoder(descriptor: passDescriptor)
+			let encoder = buffer.makeRenderCommandEncoder(descriptor: renderPassDescriptor(drawable.texture))
 		else {
 			return
 		}
