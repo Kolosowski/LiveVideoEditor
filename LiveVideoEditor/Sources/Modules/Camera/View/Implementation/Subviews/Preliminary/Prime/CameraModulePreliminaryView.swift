@@ -4,6 +4,8 @@ import UserInterface
 
 final class CameraModulePreliminaryView: UIView {
 	
+	// MARK: - Stored Properties / Views
+	
 	let metalView: MTKView = MTKView()
 	
 	// MARK: - Stored Properties / Render
