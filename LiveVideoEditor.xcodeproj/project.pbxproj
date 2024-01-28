@@ -1019,6 +1019,8 @@
 				DEVELOPMENT_TEAM = 93KKDVN863;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LiveVideoEditor/Supportings/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos and videos, allowing you to share and capture moments within the app.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We require access to your microphone to record audio and enhance your video editing experience. Capture high-quality sound and add personalized audio to your videos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1028,7 +1030,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tuesdayCode.kolosowskiar.LiveVideoEditor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuesdayCode.kolosowskiar.LiveVideoEditorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1048,6 +1050,8 @@
 				DEVELOPMENT_TEAM = 93KKDVN863;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LiveVideoEditor/Supportings/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to take photos and videos, allowing you to share and capture moments within the app.";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "We require access to your microphone to record audio and enhance your video editing experience. Capture high-quality sound and add personalized audio to your videos.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -1057,7 +1061,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.tuesdayCode.kolosowskiar.LiveVideoEditor;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tuesdayCode.kolosowskiar.LiveVideoEditorApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
