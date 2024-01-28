@@ -6,4 +6,5 @@ public enum RenderError: Error {
 	case textureCacheCreate
 	case imageBufferCreate
 	case textureCreate
+	case bufferCreate
 }
