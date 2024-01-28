@@ -1,16 +1,18 @@
 import UIKit
-import MetalKit
 import UserInterface
 
 final class CameraModulePreliminaryView: UIView {
 	
-	// MARK: - Stored Properties / Views
-	
-	let metalView: MTKView = MTKView()
-	
 	// MARK: - Stored Properties / Render
 	
+	var displayLink: CADisplayLink?
 	let renderer: CameraRenderer
+	
+	// MARK: - Computed Properties / Layers
+	
+	override class var layerClass: AnyClass {
+		CAMetalLayer.self
+	}
 	
 	// MARK: - Life Cycle
 	
@@ -23,8 +25,8 @@ final class CameraModulePreliminaryView: UIView {
 		
 		super.init(frame: frame)
 		
-		setupViews()
-		setupLayout()
+		setupLayers()
+		setupDisplayLink()
 	}
 	
 	required init?(coder: NSCoder) {
