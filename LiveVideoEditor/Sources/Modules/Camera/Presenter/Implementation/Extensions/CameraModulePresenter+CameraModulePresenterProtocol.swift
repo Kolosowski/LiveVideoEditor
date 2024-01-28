@@ -16,6 +16,8 @@ extension CameraModulePresenter: CameraModulePresenterProtocol {
 		interactor.startCameraCapture(self)
 	}
 	
-	func didReceive(error: Error) {}
+	func didReceive(error: Error) {
+		assertionFailure("Error received \(error).")
+	}
 	
 }
