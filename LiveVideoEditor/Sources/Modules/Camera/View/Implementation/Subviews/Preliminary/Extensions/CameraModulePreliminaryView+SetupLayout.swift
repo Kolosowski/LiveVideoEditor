@@ -17,7 +17,7 @@ extension CameraModulePreliminaryView {
 			metalView.leadingAnchor.constraint(
 				equalTo: leadingAnchor
 			),
-			metalView.topAnchor.constraint(
+			metalView.bottomAnchor.constraint(
 				equalTo: bottomAnchor
 			),
 			metalView.trailingAnchor.constraint(
