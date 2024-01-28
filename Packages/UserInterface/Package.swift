@@ -15,7 +15,10 @@ let package = Package(
 	targets: [
 		.target(
 			name: "UserInterface",
-			path: "Sources/"
+			path: "Sources/",
+			resources: [
+				.process("Rendering/Shaders/Shaders.metal")
+			]
 		)
 	],
 	swiftLanguageVersions: [.v5]
