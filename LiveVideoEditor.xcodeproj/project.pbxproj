@@ -716,19 +716,19 @@
 			isa = PBXGroup;
 			children = (
 				582EF0022B2C872C00AE804D /* Sources */,
-				58E30C122B2CC821000A5A98 /* Resources */,
+				58E30C122B2CC821000A5A98 /* Launch */,
 				582EF0072B2C877400AE804D /* Supportings */,
 			);
 			path = LiveVideoEditor;
 			sourceTree = "<group>";
 		};
-		58E30C122B2CC821000A5A98 /* Resources */ = {
+		58E30C122B2CC821000A5A98 /* Launch */ = {
 			isa = PBXGroup;
 			children = (
 				58E30C132B2CC836000A5A98 /* Graphics */,
 				58E30C142B2CC83F000A5A98 /* InterfaceBuilder */,
 			);
-			path = Resources;
+			path = Launch;
 			sourceTree = "<group>";
 		};
 		58E30C132B2CC836000A5A98 /* Graphics */ = {
