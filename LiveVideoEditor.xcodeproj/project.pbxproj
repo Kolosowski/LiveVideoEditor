@@ -59,6 +59,7 @@
 		58B648622B2C86E60080B8F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B648602B2C86E60080B8F9 /* LaunchScreen.storyboard */; };
 		58BCE7E82B6652D30076E0EF /* CameraModulePreliminaryView+SetupViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BCE7E72B6652D30076E0EF /* CameraModulePreliminaryView+SetupViews.swift */; };
 		58BCE7EA2B6652E90076E0EF /* CameraModulePreliminaryView+SetupLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BCE7E92B6652E90076E0EF /* CameraModulePreliminaryView+SetupLayout.swift */; };
+		58BCE7EC2B667FF60076E0EF /* CameraModulePreliminaryView+MTKViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BCE7EB2B667FF60076E0EF /* CameraModulePreliminaryView+MTKViewDelegate.swift */; };
 		58E30C3B2B2F011C000A5A98 /* Services in Frameworks */ = {isa = PBXBuildFile; productRef = 58E30C3A2B2F011C000A5A98 /* Services */; };
 		58E30C3E2B2F012A000A5A98 /* UserInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 58E30C3D2B2F012A000A5A98 /* UserInterface */; };
 /* End PBXBuildFile section */
@@ -117,6 +118,7 @@
 		58B648632B2C86E60080B8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58BCE7E72B6652D30076E0EF /* CameraModulePreliminaryView+SetupViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePreliminaryView+SetupViews.swift"; sourceTree = "<group>"; };
 		58BCE7E92B6652E90076E0EF /* CameraModulePreliminaryView+SetupLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePreliminaryView+SetupLayout.swift"; sourceTree = "<group>"; };
+		58BCE7EB2B667FF60076E0EF /* CameraModulePreliminaryView+MTKViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePreliminaryView+MTKViewDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +164,7 @@
 		581C134C2B31B7D000E515D6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				58BCE7EB2B667FF60076E0EF /* CameraModulePreliminaryView+MTKViewDelegate.swift */,
 				58BCE7E72B6652D30076E0EF /* CameraModulePreliminaryView+SetupViews.swift */,
 				58BCE7E92B6652E90076E0EF /* CameraModulePreliminaryView+SetupLayout.swift */,
 				581C13562B31BC8E00E515D6 /* CameraModulePreliminaryView+Render.swift */,
@@ -858,6 +861,7 @@
 				58B648562B2C86E30080B8F9 /* AppDelegate.swift in Sources */,
 				582EF0492B2C893500AE804D /* RootModulePresenterProtocol.swift in Sources */,
 				582EF04D2B2C893500AE804D /* RootModuleView.swift in Sources */,
+				58BCE7EC2B667FF60076E0EF /* CameraModulePreliminaryView+MTKViewDelegate.swift in Sources */,
 				582EF0512B2C893500AE804D /* RootModuleInteractorProtocol.swift in Sources */,
 				582EF04B2B2C893500AE804D /* RootModuleDependencies.swift in Sources */,
 				582EF0162B2C890000AE804D /* ModuleRouter.swift in Sources */,
