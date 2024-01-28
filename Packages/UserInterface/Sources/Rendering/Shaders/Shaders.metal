@@ -13,8 +13,8 @@ vertex CameraVertexOut vertex_camera_shader_texture(const CameraVertexIn CameraV
 }
 
 fragment half4 fragment_camera_shader_texture(CameraVertexOut CameraVertexIn [[ stage_in ]],
-									   sampler sampler2d [[ sampler(0) ]],
-									   texture2d<float> texture [[ texture((0)) ]]) {
+											  sampler sampler2d [[ sampler(0) ]],
+											  texture2d<float> texture [[ texture((0)) ]]) {
 	float4 color = texture.sample(sampler2d, CameraVertexIn.textureCoordinates);
 	return half4(color.r, color.g, color.b, 1);
 }
