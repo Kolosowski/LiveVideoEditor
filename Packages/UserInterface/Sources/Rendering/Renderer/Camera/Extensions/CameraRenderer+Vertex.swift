@@ -1,11 +1,11 @@
 import Foundation
-import MetalKit
+import simd
 
 extension CameraRenderer {
 	
 	struct Vertex {
-		var position: simd_float3
-		var texture: simd_float2
+		var position: float3
+		var texture: float2
 	}
 	
 }

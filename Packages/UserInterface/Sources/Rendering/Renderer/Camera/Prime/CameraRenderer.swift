@@ -1,6 +1,6 @@
 import Foundation
+import simd
 import Metal
-import MetalKit
 import CoreVideo.CVMetalTextureCache
 
 public final class CameraRenderer: Renderer {
@@ -26,20 +26,20 @@ public final class CameraRenderer: Renderer {
 	]
 	let vertices: [Vertex] = [
 		Vertex(
-			position: simd_float3(-1, 0.1, 0),
-			texture: simd_float2(0, 1)
+			position: float3(-1, 0.1, 0),
+			texture: float2(0, 1)
 		),
 		Vertex(
-			position: simd_float3(-1, -0.1, 0),
-			texture: simd_float2(0, 0)
+			position: float3(-1, -0.1, 0),
+			texture: float2(0, 0)
 		),
 		Vertex(
-			position: simd_float3(1, -0.1, 0),
-			texture: simd_float2(1, 0)
+			position: float3(1, -0.1, 0),
+			texture: float2(1, 0)
 		),
 		Vertex(
-			position: simd_float3(1, 0.1, 0),
-			texture: simd_float2(1, 1)
+			position: float3(1, 0.1, 0),
+			texture: float2(1, 1)
 		),
 	]
 	

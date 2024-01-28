@@ -1,5 +1,6 @@
 import Foundation
-import MetalKit
+import simd
+import Metal
 
 extension CameraRenderer {
 	
@@ -16,7 +17,7 @@ extension CameraRenderer {
 		vertexDescriptorTexture.attributes[0].bufferIndex = 0
 		// Layout
 		vertexDescriptorTexture.attributes[1].format = .float2
-		vertexDescriptorTexture.attributes[1].offset = MemoryLayout<simd_float3>.size
+		vertexDescriptorTexture.attributes[1].offset = MemoryLayout<float3>.size
 		vertexDescriptorTexture.attributes[1].bufferIndex = 0
 		vertexDescriptorTexture.layouts[0].stride = MemoryLayout<Vertex>.stride
 
