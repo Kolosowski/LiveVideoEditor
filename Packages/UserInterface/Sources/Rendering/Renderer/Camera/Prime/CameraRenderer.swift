@@ -57,7 +57,8 @@ public final class CameraRenderer: Renderer {
 		
 		guard let buffer = device.makeBuffer(
 			bytes: vertices,
-			length: vertices.count * MemoryLayout<Vertex>.stride, options: []
+			length: vertices.count * MemoryLayout<Vertex>.stride,
+			options: []
 		) else {
 			throw RenderError.bufferCreate
 		}
