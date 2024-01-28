@@ -11,7 +11,7 @@ extension CameraModuleView: CameraModuleViewProtocol {
 	
 	func process(_ buffer: CMSampleBuffer) {
 		do {
-			try preliminaryView.render(buffer)
+			try preliminaryView.process(buffer)
 		} catch {
 			presenter.didReceive(error: error)
 		}

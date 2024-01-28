@@ -1,17 +1,14 @@
 import UIKit
+import MetalKit
 import UserInterface
 
 final class CameraModulePreliminaryView: UIView {
 	
+	let metalView: MTKView = MTKView()
+	
 	// MARK: - Stored Properties / Render
 	
 	let renderer: CameraRenderer
-	
-	// MARK: - Computed Properties / Layer
-	
-	override class var layerClass: AnyClass {
-		CAMetalLayer.self
-	}
 	
 	// MARK: - Life Cycle
 	
@@ -24,17 +21,12 @@ final class CameraModulePreliminaryView: UIView {
 		
 		super.init(frame: frame)
 		
-		setupLayers()
+		setupViews()
+		setupLayout()
 	}
 	
 	required init?(coder: NSCoder) {
 		fatalError("init(coder:) has not been implemented")
-	}
-	
-	override func layoutSubviews() {
-		super.layoutSubviews()
-		
-		(layer as? CAMetalLayer)?.drawableSize = bounds.size
 	}
 	
 }
