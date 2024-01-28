@@ -10,7 +10,7 @@ extension CameraRenderer {
 		}
 		
 		var texture: CVMetalTexture?
-		CVMetalTextureCacheCreateTextureFromImage(
+		let result = CVMetalTextureCacheCreateTextureFromImage(
 			kCFAllocatorDefault,
 			textureCache,
 			buffer,
@@ -22,7 +22,11 @@ extension CameraRenderer {
 			&texture
 		)
 		
-		guard let texture, let texture = CVMetalTextureGetTexture(texture) else {
+		guard
+			result == kCVReturnSuccess,
+			let texture,
+			let texture = CVMetalTextureGetTexture(texture)
+		else {
 			throw RenderError.textureCreate
 		}
 		return texture
