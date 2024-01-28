@@ -1,4 +1,3 @@
-import Foundation
 import Metal
 
 open class Renderer {
