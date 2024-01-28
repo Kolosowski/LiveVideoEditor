@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		581C134F2B31B86300E515D6 /* CameraModulePreliminaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C134E2B31B86300E515D6 /* CameraModulePreliminaryView.swift */; };
-		581C13572B31BC8E00E515D6 /* CameraModulePreliminaryView+Render.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C13562B31BC8E00E515D6 /* CameraModulePreliminaryView+Render.swift */; };
+		581C13572B31BC8E00E515D6 /* CameraModulePreliminaryView+BufferProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581C13562B31BC8E00E515D6 /* CameraModulePreliminaryView+BufferProcess.swift */; };
 		582EF00B2B2C88A600AE804D /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 582EF00A2B2C88A600AE804D /* Swinject */; };
 		582EF0152B2C890000AE804D /* ModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0112B2C890000AE804D /* ModuleBuilder.swift */; };
 		582EF0162B2C890000AE804D /* ModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0132B2C890000AE804D /* ModuleRouter.swift */; };
@@ -65,7 +65,7 @@
 
 /* Begin PBXFileReference section */
 		581C134E2B31B86300E515D6 /* CameraModulePreliminaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraModulePreliminaryView.swift; sourceTree = "<group>"; };
-		581C13562B31BC8E00E515D6 /* CameraModulePreliminaryView+Render.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePreliminaryView+Render.swift"; sourceTree = "<group>"; };
+		581C13562B31BC8E00E515D6 /* CameraModulePreliminaryView+BufferProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePreliminaryView+BufferProcess.swift"; sourceTree = "<group>"; };
 		582EF0112B2C890000AE804D /* ModuleBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleBuilder.swift; sourceTree = "<group>"; };
 		582EF0132B2C890000AE804D /* ModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleRouter.swift; sourceTree = "<group>"; };
 		582EF0142B2C890000AE804D /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -164,7 +164,7 @@
 			children = (
 				58BCE7EE2B66E3890076E0EF /* CameraModulePreliminaryView+SetupLayers.swift */,
 				58BCE7F02B66E42B0076E0EF /* CameraModulePreliminaryView+SetupDisplayLink.swift */,
-				581C13562B31BC8E00E515D6 /* CameraModulePreliminaryView+Render.swift */,
+				581C13562B31BC8E00E515D6 /* CameraModulePreliminaryView+BufferProcess.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -846,7 +846,7 @@
 				582EF08A2B2C8C0F00AE804D /* CameraModuleDelegateProtocol.swift in Sources */,
 				582EF08B2B2C8C0F00AE804D /* CameraModulePresenter+CameraModuleProtocol.swift in Sources */,
 				582EF0462B2C893500AE804D /* RootModulePresenter+RootModulePresenterProtocol.swift in Sources */,
-				581C13572B31BC8E00E515D6 /* CameraModulePreliminaryView+Render.swift in Sources */,
+				581C13572B31BC8E00E515D6 /* CameraModulePreliminaryView+BufferProcess.swift in Sources */,
 				582EF0452B2C893500AE804D /* RootModuleDelegateProtocol.swift in Sources */,
 				582EF08D2B2C8C0F00AE804D /* CameraModulePresenter.swift in Sources */,
 				582EF0442B2C893500AE804D /* RootModuleProtocol.swift in Sources */,
