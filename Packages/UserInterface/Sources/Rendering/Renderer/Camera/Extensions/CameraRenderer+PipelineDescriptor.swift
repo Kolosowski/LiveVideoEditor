@@ -6,8 +6,8 @@ extension CameraRenderer {
 	func pipelineDescriptor() -> MTLRenderPipelineDescriptor {
 		let pipelineDescriptor = MTLRenderPipelineDescriptor()
 		pipelineDescriptor.colorAttachments[0].pixelFormat = pixelFormat
-		pipelineDescriptor.vertexFunction = library.makeFunction(name: "vertex_camera_shader_texture")
-		pipelineDescriptor.fragmentFunction = library.makeFunction(name: "fragment_camera_shader_texture")
+		pipelineDescriptor.vertexFunction = library.makeFunction(name: "vertex_camera_shader")
+		pipelineDescriptor.fragmentFunction = library.makeFunction(name: "fragment_camera_shader")
 		
 		let vertexDescriptorTexture = MTLVertexDescriptor()
 		// Vertex
