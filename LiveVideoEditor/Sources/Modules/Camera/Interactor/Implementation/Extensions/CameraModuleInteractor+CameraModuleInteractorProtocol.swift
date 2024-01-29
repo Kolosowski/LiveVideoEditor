@@ -1,14 +1,23 @@
 import Foundation
-import Services
+import Combine
+import CoreMedia.CMSampleBuffer
 
 extension CameraModuleInteractor: CameraModuleInteractorProtocol {
+	
+	var videoOutputPublisher: AnyPublisher<CMSampleBuffer, Never> {
+		dependencies.cameraService.videoOutputPublisher
+	}
+	
+	var audioOutputPublisher: AnyPublisher<CMSampleBuffer, Never> {
+		dependencies.cameraService.audioOutputPublisher
+	}
 	
 	func setupCamera() throws {
 		try dependencies.cameraService.setup()
 	}
 	
-	func startCameraCapture(_ delegate: CameraServiceDelegateProtocol) {
-		dependencies.cameraService.startCapture(delegate)
+	func startCameraCapture() {
+		dependencies.cameraService.startCapture()
 	}
 	
 	func stopCameraCapture() {

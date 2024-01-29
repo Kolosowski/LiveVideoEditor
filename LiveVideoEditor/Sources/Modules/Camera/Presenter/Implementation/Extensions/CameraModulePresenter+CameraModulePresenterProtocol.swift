@@ -5,6 +5,7 @@ extension CameraModulePresenter: CameraModulePresenterProtocol {
 	func viewDidLoad() {
 		view?.setup()
 		
+		setupObservers()
 		do {
 			try interactor.setupCamera()
 		} catch {
@@ -13,7 +14,7 @@ extension CameraModulePresenter: CameraModulePresenterProtocol {
 	}
 	
 	func viewDidAppear() {
-		interactor.startCameraCapture(self)
+		interactor.startCameraCapture()
 	}
 	
 	func didReceive(error: Error) {

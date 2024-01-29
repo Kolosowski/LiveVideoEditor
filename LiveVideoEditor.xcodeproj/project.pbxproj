@@ -53,12 +53,12 @@
 		582EF09C2B2C8C0F00AE804D /* CameraModuleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0852B2C8C0F00AE804D /* CameraModuleRouter.swift */; };
 		582EF09D2B2C8C0F00AE804D /* CameraModuleRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0872B2C8C0F00AE804D /* CameraModuleRouterProtocol.swift */; };
 		582EF0B52B2C9BDC00AE804D /* Container+TryResolve.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0B42B2C9BDB00AE804D /* Container+TryResolve.swift */; };
-		582EF0B72B2C9E9400AE804D /* CameraModulePresenter+CameraServiceDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582EF0B62B2C9E9400AE804D /* CameraModulePresenter+CameraServiceDelegateProtocol.swift */; };
 		58B648562B2C86E30080B8F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B648552B2C86E30080B8F9 /* AppDelegate.swift */; };
 		58B6485F2B2C86E60080B8F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B6485E2B2C86E60080B8F9 /* Assets.xcassets */; };
 		58B648622B2C86E60080B8F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B648602B2C86E60080B8F9 /* LaunchScreen.storyboard */; };
 		58BCE7EF2B66E3890076E0EF /* CameraModulePreliminaryView+SetupLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BCE7EE2B66E3890076E0EF /* CameraModulePreliminaryView+SetupLayers.swift */; };
 		58BCE7F12B66E42B0076E0EF /* CameraModulePreliminaryView+SetupDisplayLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BCE7F02B66E42B0076E0EF /* CameraModulePreliminaryView+SetupDisplayLink.swift */; };
+		58BCE7F32B67B8270076E0EF /* CameraModulePresenter+SetupObservers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BCE7F22B67B8270076E0EF /* CameraModulePresenter+SetupObservers.swift */; };
 		58E30C3B2B2F011C000A5A98 /* Services in Frameworks */ = {isa = PBXBuildFile; productRef = 58E30C3A2B2F011C000A5A98 /* Services */; };
 		58E30C3E2B2F012A000A5A98 /* UserInterface in Frameworks */ = {isa = PBXBuildFile; productRef = 58E30C3D2B2F012A000A5A98 /* UserInterface */; };
 /* End PBXBuildFile section */
@@ -109,7 +109,6 @@
 		582EF0852B2C8C0F00AE804D /* CameraModuleRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraModuleRouter.swift; sourceTree = "<group>"; };
 		582EF0872B2C8C0F00AE804D /* CameraModuleRouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraModuleRouterProtocol.swift; sourceTree = "<group>"; };
 		582EF0B42B2C9BDB00AE804D /* Container+TryResolve.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Container+TryResolve.swift"; sourceTree = "<group>"; };
-		582EF0B62B2C9E9400AE804D /* CameraModulePresenter+CameraServiceDelegateProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePresenter+CameraServiceDelegateProtocol.swift"; sourceTree = "<group>"; };
 		58B648522B2C86E30080B8F9 /* LiveVideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveVideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B648552B2C86E30080B8F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58B6485E2B2C86E60080B8F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -117,6 +116,7 @@
 		58B648632B2C86E60080B8F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58BCE7EE2B66E3890076E0EF /* CameraModulePreliminaryView+SetupLayers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePreliminaryView+SetupLayers.swift"; sourceTree = "<group>"; };
 		58BCE7F02B66E42B0076E0EF /* CameraModulePreliminaryView+SetupDisplayLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePreliminaryView+SetupDisplayLink.swift"; sourceTree = "<group>"; };
+		58BCE7F22B67B8270076E0EF /* CameraModulePresenter+SetupObservers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModulePresenter+SetupObservers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -518,7 +518,7 @@
 			children = (
 				582EF0642B2C8C0F00AE804D /* CameraModulePresenter+CameraModulePresenterProtocol.swift */,
 				582EF0632B2C8C0F00AE804D /* CameraModulePresenter+CameraModuleProtocol.swift */,
-				582EF0B62B2C9E9400AE804D /* CameraModulePresenter+CameraServiceDelegateProtocol.swift */,
+				58BCE7F22B67B8270076E0EF /* CameraModulePresenter+SetupObservers.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -836,7 +836,6 @@
 				582EF0472B2C893500AE804D /* RootModulePresenter+RootModuleProtocol.swift in Sources */,
 				582EF0922B2C8C0F00AE804D /* CameraModuleView+SetupActions.swift in Sources */,
 				582EF09A2B2C8C0F00AE804D /* CameraModuleInteractorProtocol.swift in Sources */,
-				582EF0B72B2C9E9400AE804D /* CameraModulePresenter+CameraServiceDelegateProtocol.swift in Sources */,
 				582EF04A2B2C893500AE804D /* RootModuleDependenciesProtocol.swift in Sources */,
 				582EF0892B2C8C0F00AE804D /* CameraModuleProtocol.swift in Sources */,
 				582EF0942B2C8C0F00AE804D /* CameraModuleView+CameraModuleViewProtocol.swift in Sources */,
@@ -870,6 +869,7 @@
 				582EF0932B2C8C0F00AE804D /* CameraModuleView+SetupLayout.swift in Sources */,
 				582EF0882B2C8C0F00AE804D /* CameraModuleBuilder.swift in Sources */,
 				582EF0432B2C893500AE804D /* RootModuleBuilder.swift in Sources */,
+				58BCE7F32B67B8270076E0EF /* CameraModulePresenter+SetupObservers.swift in Sources */,
 				582EF08F2B2C8C0F00AE804D /* CameraModuleDependenciesContainer.swift in Sources */,
 				582EF04E2B2C893500AE804D /* RootModuleViewProtocol.swift in Sources */,
 				582EF0962B2C8C0F00AE804D /* CameraModuleView.swift in Sources */,

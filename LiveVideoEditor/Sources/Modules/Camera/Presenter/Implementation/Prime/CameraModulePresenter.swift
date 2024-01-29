@@ -1,4 +1,5 @@
 import Foundation
+import Combine
 
 final class CameraModulePresenter {
 	
@@ -9,6 +10,10 @@ final class CameraModulePresenter {
 	
 	let router: CameraModuleRouterProtocol
 	let interactor: CameraModuleInteractorProtocol
+	
+	// MARK: - Stored Properties / Combine
+	
+	var cancellables: Set<AnyCancellable> = []
 	
 	// MARK: - Life Cycle
 	
