@@ -4,7 +4,7 @@ extension CameraModulePreliminaryView {
 	
 	func setupDisplayLink() {
 		displayLink = CADisplayLink(target: self, selector: #selector(drawLayer(_:)))
-		displayLink?.preferredFramesPerSecond = 60
+		displayLink?.preferredFramesPerSecond = UIScreen.main.maximumFramesPerSecond
 		displayLink?.add(to: .main, forMode: .default)
 	}
 	
