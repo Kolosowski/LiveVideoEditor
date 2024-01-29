@@ -10,9 +10,9 @@ extension CameraService: AVCaptureVideoDataOutputSampleBufferDelegate, AVCapture
 		DispatchQueue.main.async {
 			switch output {
 			case is AVCaptureVideoDataOutput:
-				self.delegate?.didReceiveVideoOutput(sampleBuffer)
+				self.videoOutputSubject.send(sampleBuffer)
 			case is AVCaptureAudioDataOutput:
-				self.delegate?.didReceiveAudioOutput(sampleBuffer)
+				self.audioOutputSubject.send(sampleBuffer)
 			default:
 				debugPrint("Unrecognized output received.")
 			}

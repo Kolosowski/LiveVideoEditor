@@ -1,4 +1,6 @@
 import AVFoundation
+import Combine
+import CoreMedia.CMSampleBuffer
 
 public final class CameraService: NSObject {
 	
@@ -7,8 +9,9 @@ public final class CameraService: NSObject {
 	let captureSession: AVCaptureSession = AVCaptureSession()
 	let workQueue: DispatchQueue = DispatchQueue(label: "com.tuesdayCode.kolosowskiar.cameraService")
 	
-	// MARK: - Stored Properties / References
+	// MARK: - Stored Properties / Combine
 	
-	weak var delegate: CameraServiceDelegateProtocol?
+	let videoOutputSubject: PassthroughSubject<CMSampleBuffer, Never> = PassthroughSubject()
+	let audioOutputSubject: PassthroughSubject<CMSampleBuffer, Never> = PassthroughSubject()
 	
 }
