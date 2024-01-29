@@ -7,9 +7,10 @@ public final class CameraRenderer: Renderer {
 	// MARK: - Stored Properties / Tools
 	
 	public let pixelFormat: MTLPixelFormat = .bgra8Unorm
-	public private(set) var textureCache: CVMetalTextureCache!
-	public private(set) var pipelineState: MTLRenderPipelineState!
-	public private(set) var samplerState: MTLSamplerState!
+	
+	private(set) var textureCache: CVMetalTextureCache!
+	private(set) var pipelineState: MTLRenderPipelineState!
+	private(set) var samplerState: MTLSamplerState!
 	
 	// MARK: - Stored Properties / Buffers
 	

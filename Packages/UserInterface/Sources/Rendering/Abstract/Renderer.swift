@@ -5,8 +5,9 @@ open class Renderer {
 	// MARK: - Stored Properties / Tools
 	
 	public let device: MTLDevice
-	public let queue: MTLCommandQueue
-	public let library: MTLLibrary
+	
+	let queue: MTLCommandQueue
+	let library: MTLLibrary
 	
 	// MARK: - Life Cycle
 	
