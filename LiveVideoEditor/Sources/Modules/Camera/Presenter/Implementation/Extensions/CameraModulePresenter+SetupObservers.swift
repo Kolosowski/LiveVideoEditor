@@ -3,8 +3,8 @@ import Foundation
 extension CameraModulePresenter {
 	
 	func setupObservers() {
-		interactor.videoOutputPublisher.sink { sampleBuffer in
-			self.view?.process(sampleBuffer)
+		interactor.videoOutputPublisher.sink { [weak self] sampleBuffer in
+			self?.view?.process(sampleBuffer)
 		}.store(in: &cancellables)
 	}
 	
