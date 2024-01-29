@@ -1,7 +1,7 @@
 #include <simd/simd.h>
 
-#ifndef Header_h
-#define Header_h
+#ifndef ShadersModels_h
+#define ShadersModels_h
 
 // MARK: - Camera Models
 
