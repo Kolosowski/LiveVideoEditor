@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 import CoreMedia.CMSampleBuffer
+import Services
 
 extension CameraModuleInteractor: CameraModuleInteractorProtocol {
 	
