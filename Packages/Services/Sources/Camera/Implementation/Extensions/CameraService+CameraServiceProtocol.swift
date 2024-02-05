@@ -5,11 +5,11 @@ import CoreMedia.CMSampleBuffer
 extension CameraService: CameraServiceProtocol {
 	
 	public var videoOutputPublisher: AnyPublisher<CMSampleBuffer, Never> {
-		videoOutputSubject.eraseToAnyPublisher()
+		videoOutputSubject.receive(on: DispatchQueue.main).eraseToAnyPublisher()
 	}
 	
 	public var audioOutputPublisher: AnyPublisher<CMSampleBuffer, Never> {
-		audioOutputSubject.eraseToAnyPublisher()
+		audioOutputSubject.receive(on: DispatchQueue.main).eraseToAnyPublisher()
 	}
 	
 	public func setup() throws {
