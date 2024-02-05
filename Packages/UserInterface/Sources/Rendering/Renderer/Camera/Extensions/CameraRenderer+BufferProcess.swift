@@ -4,6 +4,9 @@ import CoreMedia.CMSampleBuffer
 extension CameraRenderer {
 	
 	public func process(buffer: CMSampleBuffer) throws {
+		guard let textureCache else {
+			return
+		}
 		guard let buffer = CMSampleBufferGetImageBuffer(buffer) else {
 			throw RenderError.imageBufferCreate
 		}

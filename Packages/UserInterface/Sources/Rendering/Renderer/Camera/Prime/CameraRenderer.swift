@@ -8,14 +8,14 @@ public final class CameraRenderer: Renderer {
 	
 	public let pixelFormat: MTLPixelFormat = .bgra8Unorm
 	
-	private(set) var textureCache: CVMetalTextureCache!
-	private(set) var pipelineState: MTLRenderPipelineState!
-	private(set) var samplerState: MTLSamplerState!
+	private(set) var textureCache: CVMetalTextureCache?
+	private(set) var pipelineState: MTLRenderPipelineState?
+	private(set) var samplerState: MTLSamplerState?
 	
 	// MARK: - Stored Properties / Buffers
 	
-	private(set) var vertexBuffer: MTLBuffer!
-	private(set) var indicesBuffer: MTLBuffer!
+	private(set) var vertexBuffer: MTLBuffer?
+	private(set) var indicesBuffer: MTLBuffer?
 	
 	// MARK: - Stored Properties / Texture
 	

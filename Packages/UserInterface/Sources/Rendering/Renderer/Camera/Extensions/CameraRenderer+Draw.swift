@@ -4,6 +4,8 @@ extension CameraRenderer {
 	
 	public func draw(_ drawable: CAMetalDrawable) {
 		guard
+			let pipelineState,
+			let indicesBuffer,
 			let buffer = queue.makeCommandBuffer(),
 			let encoder = buffer.makeRenderCommandEncoder(descriptor: renderPassDescriptor(drawable.texture))
 		else {
