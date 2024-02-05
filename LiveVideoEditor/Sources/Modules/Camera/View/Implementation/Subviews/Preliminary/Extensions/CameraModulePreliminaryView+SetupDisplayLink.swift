@@ -1,4 +1,5 @@
 import UIKit
+import UserInterface
 
 extension CameraModulePreliminaryView {
 	
@@ -16,10 +17,10 @@ private extension CameraModulePreliminaryView {
 	
 	@objc
 	func drawLayer(_ link: CADisplayLink) {
-		guard let drawable = (layer as? CAMetalLayer)?.nextDrawable() else {
+		guard let drawable = metalLayer?.nextDrawable() else {
 			return
 		}
-		renderer.draw(drawable)
+		renderer?.draw(drawable)
 	}
 	
 }

@@ -3,8 +3,8 @@ import CoreMedia.CMSampleBuffer
 
 extension CameraModuleView: CameraModuleViewProtocol {
 	
-	func setup() {
-		setupViews()
+	func setup() throws {
+		try setupViews()
 		setupLayout()
 		setupActions()
 	}

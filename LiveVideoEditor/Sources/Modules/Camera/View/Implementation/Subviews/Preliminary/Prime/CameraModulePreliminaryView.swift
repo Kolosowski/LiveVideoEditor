@@ -6,7 +6,7 @@ final class CameraModulePreliminaryView: UIView {
 	// MARK: - Stored Properties / Render
 	
 	var displayLink: CADisplayLink?
-	let renderer: CameraRenderer
+	var renderer: CameraRenderer?
 	
 	// MARK: - Computed Properties / Layers
 	
@@ -14,23 +14,8 @@ final class CameraModulePreliminaryView: UIView {
 		CAMetalLayer.self
 	}
 	
-	// MARK: - Life Cycle
-	
-	override init(frame: CGRect) {
-		do {
-			renderer = try CameraRenderer()
-		} catch {
-			fatalError("Camera renderer couldn't be created. \(error)")
-		}
-		
-		super.init(frame: frame)
-		
-		setupLayers()
-		setupDisplayLink()
-	}
-	
-	required init?(coder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
+	var metalLayer: CAMetalLayer? {
+		layer as? CAMetalLayer
 	}
 	
 }

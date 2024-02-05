@@ -2,6 +2,8 @@ import UIKit
 
 extension CameraModuleView {
 	
-	func setupViews() {}
+	func setupViews() throws {
+		try preliminaryView.setup()
+	}
 	
 }

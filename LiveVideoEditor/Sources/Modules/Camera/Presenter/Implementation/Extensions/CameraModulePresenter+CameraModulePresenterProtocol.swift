@@ -3,13 +3,12 @@ import Foundation
 extension CameraModulePresenter: CameraModulePresenterProtocol {
 	
 	func viewDidLoad() {
-		view?.setup()
-		
-		setupObservers()
 		do {
+			try view?.setup()
+			setupObservers()
 			try interactor.setupCamera()
 		} catch {
-			assertionFailure("Couldn't setup camera")
+			assertionFailure("Setup error \(error)")
 		}
 	}
 	
