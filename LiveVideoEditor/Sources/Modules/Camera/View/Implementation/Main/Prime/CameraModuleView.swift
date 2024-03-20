@@ -14,6 +14,7 @@ final class CameraModuleView: UIViewController {
 	// MARK: - Stored Properties / Views
 	
 	let preliminaryView: CameraModulePreliminaryView = CameraModulePreliminaryView()
+	let recordButton: CameraModuleRecordButton = CameraModuleRecordButton()
 	
 	// MARK: - Life Cycle
 	

@@ -4,7 +4,8 @@ extension CameraModuleView {
 	
 	func setupLayout() {
 		[
-			preliminaryView
+			preliminaryView,
+			recordButton
 		].forEach {
 			view.addSubview($0)
 			$0.translatesAutoresizingMaskIntoConstraints = false
@@ -22,6 +23,20 @@ extension CameraModuleView {
 			),
 			preliminaryView.trailingAnchor.constraint(
 				equalTo: view.trailingAnchor
+			),
+			
+			recordButton.centerXAnchor.constraint(
+				equalTo: view.centerXAnchor
+			),
+			recordButton.bottomAnchor.constraint(
+				equalTo: view.safeAreaLayoutGuide.bottomAnchor,
+				constant: -68
+			),
+			recordButton.widthAnchor.constraint(
+				equalToConstant: 88
+			),
+			recordButton.heightAnchor.constraint(
+				equalTo: recordButton.widthAnchor
 			)
 		])
 	}
