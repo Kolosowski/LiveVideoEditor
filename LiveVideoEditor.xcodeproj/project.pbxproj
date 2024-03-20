@@ -57,6 +57,7 @@
 		586A69402BAB00290097FBC2 /* CameraModuleRecordButton+SetupViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586A693F2BAB00290097FBC2 /* CameraModuleRecordButton+SetupViews.swift */; };
 		586A69422BAB00410097FBC2 /* CameraModuleRecordButton+SetupLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586A69412BAB00410097FBC2 /* CameraModuleRecordButton+SetupLayout.swift */; };
 		586A69442BAB00530097FBC2 /* CameraModuleRecordButton+Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586A69432BAB00530097FBC2 /* CameraModuleRecordButton+Constants.swift */; };
+		586A69462BAB0E430097FBC2 /* CameraModuleRecordButton+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586A69452BAB0E430097FBC2 /* CameraModuleRecordButton+Animations.swift */; };
 		58B648562B2C86E30080B8F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58B648552B2C86E30080B8F9 /* AppDelegate.swift */; };
 		58B6485F2B2C86E60080B8F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58B6485E2B2C86E60080B8F9 /* Assets.xcassets */; };
 		58B648622B2C86E60080B8F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58B648602B2C86E60080B8F9 /* LaunchScreen.storyboard */; };
@@ -118,6 +119,7 @@
 		586A693F2BAB00290097FBC2 /* CameraModuleRecordButton+SetupViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModuleRecordButton+SetupViews.swift"; sourceTree = "<group>"; };
 		586A69412BAB00410097FBC2 /* CameraModuleRecordButton+SetupLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModuleRecordButton+SetupLayout.swift"; sourceTree = "<group>"; };
 		586A69432BAB00530097FBC2 /* CameraModuleRecordButton+Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModuleRecordButton+Constants.swift"; sourceTree = "<group>"; };
+		586A69452BAB0E430097FBC2 /* CameraModuleRecordButton+Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CameraModuleRecordButton+Animations.swift"; sourceTree = "<group>"; };
 		58B648522B2C86E30080B8F9 /* LiveVideoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveVideoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58B648552B2C86E30080B8F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58B6485E2B2C86E60080B8F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -719,6 +721,7 @@
 			children = (
 				586A693F2BAB00290097FBC2 /* CameraModuleRecordButton+SetupViews.swift */,
 				586A69412BAB00410097FBC2 /* CameraModuleRecordButton+SetupLayout.swift */,
+				586A69452BAB0E430097FBC2 /* CameraModuleRecordButton+Animations.swift */,
 				586A69432BAB00530097FBC2 /* CameraModuleRecordButton+Constants.swift */,
 			);
 			path = Extensions;
@@ -902,6 +905,7 @@
 				582EF04B2B2C893500AE804D /* RootModuleDependencies.swift in Sources */,
 				582EF0162B2C890000AE804D /* ModuleRouter.swift in Sources */,
 				58BCE7F12B66E42B0076E0EF /* CameraModulePreliminaryView+SetupDisplayLink.swift in Sources */,
+				586A69462BAB0E430097FBC2 /* CameraModuleRecordButton+Animations.swift in Sources */,
 				582EF08E2B2C8C0F00AE804D /* CameraModulePresenterProtocol.swift in Sources */,
 				581C134F2B31B86300E515D6 /* CameraModulePreliminaryView.swift in Sources */,
 				582EF08C2B2C8C0F00AE804D /* CameraModulePresenter+CameraModulePresenterProtocol.swift in Sources */,

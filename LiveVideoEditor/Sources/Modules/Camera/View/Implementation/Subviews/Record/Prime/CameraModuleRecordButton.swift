@@ -29,4 +29,20 @@ final class CameraModuleRecordButton: UIView {
 		actionView.layer.cornerRadius = actionView.bounds.width * 0.5
 	}
 	
+	// MARK: - Gestures
+	
+	override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+		updateActionView(
+			scale: 0.9,
+			animated: true
+		)
+	}
+	
+	override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+		updateActionView(
+			scale: 1,
+			animated: true
+		)
+	}
+	
 }
