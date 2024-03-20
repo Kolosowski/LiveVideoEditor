@@ -3,6 +3,13 @@ import Combine
 
 extension CameraModuleView {
 	
-	func setupActions() {}
+	func setupActions() {
+		recordButton.touchesBegan = { [weak self] in
+			self?.presenter.didStartTouching()
+		}
+		recordButton.touchesEnded = { [weak self] in
+			self?.presenter.didEndTouching()
+		}
+	}
 	
 }

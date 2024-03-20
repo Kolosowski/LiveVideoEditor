@@ -4,4 +4,6 @@ protocol CameraModulePresenterProtocol {
 	func viewDidLoad()
 	func viewDidAppear()
 	func didReceive(error: Error)
+	func didStartTouching()
+	func didEndTouching()
 }

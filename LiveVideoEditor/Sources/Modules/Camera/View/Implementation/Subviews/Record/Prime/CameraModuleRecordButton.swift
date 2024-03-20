@@ -2,6 +2,11 @@ import UIKit
 
 final class CameraModuleRecordButton: UIView {
 	
+	// MARK: - Stored Properties / Actions
+	
+	var touchesBegan: (() -> Void)?
+	var touchesEnded: (() -> Void)?
+	
 	// MARK: - Stored Properties / Views
 	
 	let strokeView: UIView = UIView()
@@ -36,6 +41,7 @@ final class CameraModuleRecordButton: UIView {
 			scale: 0.9,
 			animated: true
 		)
+		touchesBegan?()
 	}
 	
 	override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -43,6 +49,7 @@ final class CameraModuleRecordButton: UIView {
 			scale: 1,
 			animated: true
 		)
+		touchesEnded?()
 	}
 	
 }
