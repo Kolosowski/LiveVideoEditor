@@ -22,25 +22,25 @@ public final class CameraRenderer: Renderer {
 	var texture: MTLTexture?
 	let indexedPrimitives: [UInt16] = [
 		0, 1, 2,
-		2, 3, 0,
+		2, 3, 1,
 	]
 	let vertices: [Vertex] = [
 		Vertex(
-			position: float3(1, 1, 0),
+			position: float3(-1, 1, 0),
 			texture: float2(0, 0)
 		),
 		Vertex(
-			position: float3(-1, 1, 0),
-			texture: float2(0, 1)
+			position: float3(1, 1, 0),
+			texture: float2(1, 0)
 		),
 		Vertex(
 			position: float3(-1, -1, 0),
-			texture: float2(1, 1)
+			texture: float2(0, 1)
 		),
 		Vertex(
 			position: float3(1, -1, 0),
-			texture: float2(1, 0)
-		),
+			texture: float2(1, 1)
+		)
 	]
 	
 	// MARK: - Life Cycle
