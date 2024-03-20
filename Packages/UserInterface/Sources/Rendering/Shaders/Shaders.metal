@@ -16,5 +16,5 @@ fragment half4 fragment_camera_shader(CameraVertexOut cameraVertexIn [[ stage_in
 											  sampler sampler2d [[ sampler(0) ]],
 											  texture2d<float> texture [[ texture((0)) ]]) {
 	float4 color = texture.sample(sampler2d, cameraVertexIn.textureCoordinates);
-	return half4(color.r, color.g, color.b, 1);
+	return half4(color.r, color.g, color.b, color.a);
 }
