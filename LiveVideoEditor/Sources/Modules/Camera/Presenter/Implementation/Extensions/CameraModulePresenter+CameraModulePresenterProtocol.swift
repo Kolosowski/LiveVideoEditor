@@ -20,8 +20,8 @@ extension CameraModulePresenter: CameraModulePresenterProtocol {
 		assertionFailure("Error received \(error).")
 	}
 	
-	func didStartTouching() {}
+	func didPressRecord() {}
 	
-	func didEndTouching() {}
+	func didReleaseRecord() {}
 	
 }

@@ -5,10 +5,10 @@ extension CameraModuleView {
 	
 	func setupActions() {
 		recordButton.touchesBegan = { [weak self] in
-			self?.presenter.didStartTouching()
+			self?.presenter.didPressRecord()
 		}
 		recordButton.touchesEnded = { [weak self] in
-			self?.presenter.didEndTouching()
+			self?.presenter.didReleaseRecord()
 		}
 	}
 	
