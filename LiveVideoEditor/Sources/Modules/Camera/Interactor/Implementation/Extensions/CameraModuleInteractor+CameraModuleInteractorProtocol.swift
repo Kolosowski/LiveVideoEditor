@@ -6,19 +6,11 @@ import Services
 extension CameraModuleInteractor: CameraModuleInteractorProtocol {
 	
 	var videoOutputPublisher: AnyPublisher<CMSampleBuffer, Never> {
-		dependencies
-			.cameraService
-			.videoOutputPublisher
-			.receive(on: DispatchQueue.main)
-			.eraseToAnyPublisher()
+		dependencies.cameraService.videoOutputPublisher
 	}
 	
 	var audioOutputPublisher: AnyPublisher<CMSampleBuffer, Never> {
-		dependencies
-			.cameraService
-			.audioOutputPublisher
-			.receive(on: DispatchQueue.main)
-			.eraseToAnyPublisher()
+		dependencies.cameraService.audioOutputPublisher
 	}
 	
 	func setupCamera() throws {
