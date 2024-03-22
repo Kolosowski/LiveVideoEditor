@@ -11,12 +11,12 @@ extension CameraRenderer {
 		
 		let vertexDescriptorTexture = MTLVertexDescriptor()
 		// Vertex Position
-		vertexDescriptorTexture.attributes[0].format = .float3
+		vertexDescriptorTexture.attributes[0].format = .float4
 		vertexDescriptorTexture.attributes[0].offset = 0
 		vertexDescriptorTexture.attributes[0].bufferIndex = 0
 		// Texture Coordinate
-		vertexDescriptorTexture.attributes[1].format = .float2
-		vertexDescriptorTexture.attributes[1].offset = MemoryLayout<float3>.size
+		vertexDescriptorTexture.attributes[1].format = .float3
+		vertexDescriptorTexture.attributes[1].offset = MemoryLayout<float4>.size
 		vertexDescriptorTexture.attributes[1].bufferIndex = 0
 		// Stride
 		vertexDescriptorTexture.layouts[0].stride = MemoryLayout<Vertex>.stride
