@@ -16,6 +16,12 @@ final class CameraModuleView: UIViewController {
 	let preliminaryView: CameraModulePreliminaryView = CameraModulePreliminaryView()
 	let recordButton: CameraModuleRecordButton = CameraModuleRecordButton()
 	
+	// MARK: - Computed Properties / Orientation
+	
+	override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+		.portrait
+	}
+	
 	// MARK: - Life Cycle
 	
 	init(presenter: CameraModulePresenterProtocol) {
