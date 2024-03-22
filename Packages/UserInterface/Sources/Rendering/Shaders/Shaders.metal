@@ -12,9 +12,9 @@ vertex CameraVertexOut vertex_camera_shader(const CameraVertexIn cameraVertexIn 
 	return cameraVertexOut;
 }
 
-fragment half4 fragment_camera_shader(CameraVertexOut cameraVertexIn [[ stage_in ]],
-											  sampler sampler2d [[ sampler(0) ]],
-											  texture2d<float> texture [[ texture((0)) ]]) {
+fragment half4 fragment_camera_shader(CameraVertexIn cameraVertexIn [[stage_in]],
+									  sampler sampler2d [[sampler(0)]],
+									  texture2d<float> texture [[texture((0))]]) {
 	float4 color = texture.sample(sampler2d, cameraVertexIn.textureCoordinates);
 	return half4(color.r, color.g, color.b, color.a);
 }
